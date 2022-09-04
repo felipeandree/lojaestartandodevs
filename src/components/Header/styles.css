@@ -1,0 +1,16 @@
+.header { 
+    background-color: #242424;
+    width: 100%;
+    height: 70px;
+    display: flex;
+}
+
+.header img {
+    width: 18.52px;
+    height: 27px; 
+}
+
+.logo-input {
+    width: 100%;
+    height: 25px;
+}
