@@ -1,9 +1,7 @@
 import React from 'react';
-import { Logo } from '../../assets/img/logo.png'; 
+import '../../assets/img/logo.png'; 
 import './styles.css'; 
-import material from "material-symbols";
-
-
+import 'material-symbols'; 
 
 export function Header() {
     return (
@@ -11,7 +9,9 @@ export function Header() {
         <div className="menu-logo">
           <img className="logo-img" src='Logo.png' alt="logo" />
         </div>
-        <input className="logo-input" type="text" />
+
+        <input className="input-header" type="text" placeholder='Pesquisar'/>
+
         <span class="material-symbols-outlined">shopping_cart</span>
         <span class="material-symbols-outlined"> menu </span> 
         
