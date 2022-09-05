@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
 @import 'material-symbols/rounded.css';
 
+:root {
+  --primary-color: #81CAA8;
+  --primary-color-dark: #478166;
+  --primary-color-light: #C4F5DF;
+  --neutral-color: #606062;
+  --neutral-color-dark: #242424;
+  --neutral-color-light: #FFFFFF;
+  --alert-color: #AA3929;
+  --error-color: #C06C5F;
+}
 body {
   box-sizing: border-box;
   font-family: "Ubuntu", "Open Sans", "sans-serif";

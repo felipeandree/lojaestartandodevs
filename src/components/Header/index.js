@@ -1,7 +1,7 @@
 import React from 'react';
-import { Logo } from '../../assets/img/logo.png'; 
+import Logo from '../../assets/img/logo.png'; 
 import './styles.css'; 
-import material from "material-symbols";
+// import material from "material-symbols";
 
 
 
@@ -9,11 +9,12 @@ export function Header() {
     return (
       <div className="header"> 
         <div className="menu-logo">
-          <img className="logo-img" src='Logo.png' alt="logo" />
+          <img className="logo-img" src={Logo} alt="logo" />
+
         </div>
         <input className="logo-input" type="text" />
-        <span class="material-symbols-outlined">shopping_cart</span>
-        <span class="material-symbols-outlined"> menu </span> 
+        <span className="material-symbols-rounded" >shopping_cart</span>
+        <span className="material-symbols-rounded">menu</span> 
         
       </div>
 
