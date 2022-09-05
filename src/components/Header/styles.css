@@ -1,5 +1,7 @@
+@import "../../styles/global.css";
+
 .header { 
-    background-color: #242424;
+    background-color: var(--neutral-color-dark);
     width: 100%;
     height: 70px;
     display: flex;
@@ -8,7 +10,7 @@
 }
 
 .header span {
-    color: #81CAA8;
+    color: var(--primary-color);
     width: 40px;
 }
 
@@ -21,12 +23,12 @@
 .input-header {
     width: 100%;
     height: 25px;
-    background:  #606062;
+    background:  var(--neutral-color);
     margin: 8px 8px 8px 8px; 
 } 
 
 .input-header::placeholder {
-    color: #ffffff;
+    color: var(--neutral-color-light);
     font-family: Open sans;
     padding: 8px;
     font-size: 16px;

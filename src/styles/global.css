@@ -11,6 +11,7 @@
   --alert-color: #AA3929;
   --error-color: #C06C5F;
 }
+
 body {
   box-sizing: border-box;
   font-family: "Ubuntu", "Open Sans", "sans-serif";
