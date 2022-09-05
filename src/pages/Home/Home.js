@@ -1,13 +1,37 @@
-import './styles.css'
+import "./styles.css";
+import { Header } from "../../components/Header/index";
+import BannerComponent from "../../components/Banner/Banner";
 
+const Home = () => {
+  const slides = [
+    {
+      url: "http://localhost:3000/img/banner-camisa.png",
+      title: "Slide-1",
+    },
+    {
+      url: "http://localhost:3000/img/banner-canecas.png",
+      title: "Slide-2",
+    },
+    {
+      url: "http://localhost:3000/img/banner-almofadas.png",
+      title: "Slide-3",
+    },
+  ];
 
-function Home() {
+  const containerStyles = {
+    width: "620px",
+    height: "460px",
+    margin: "0 auto",
+  };
+
   return (
-    <div className="Home">
-     
-      
-    </div>
+    <>
+      <Header />
+      <div style={containerStyles}>
+        <BannerComponent slides={slides} />
+      </div>
+    </>
   );
-}
+};
 
 export default Home;
