@@ -1,12 +1,12 @@
 @import "../../Assets/Styles/global.css";
 
 .header { 
-    background-color: var(--neutral-color-dark);
-    width: 100%;
-    height: 7rem;
-    display: flex;
     align-items: center;
+    background-color: var(--neutral-color-dark);
+    display: flex;
+    height: 5rem;
     justify-content: space-between;
+    width: 100%;
 }
 
 .header span {
@@ -15,25 +15,64 @@
 }
 
 .header img {
-    width: 18.52px;
-    height: 27px;
-    margin: 8px 8px 8px 18px;
+    height: 2rem;
+    width: 1.8rem;
 }
 
-.input-header {
-    width: 100%;
-    height: 25px;
+/* .input-header {
     background:  var(--neutral-color);
+    height: 25px;
     margin: 8px 8px 8px 8px; 
-} 
+    width: 100%;
+}  */
 
-.input-header::placeholder {
+/* .input-header::placeholder {
     color: var(--neutral-color-light);
     font-family: Open sans;
     padding: 8px;
     font-size: 16px;
     
+} */
+
+.logo-input {
+    background-color: var(--neutral-color);
+    border-radius: 0.5rem;
+    border-style:solid;
+    border:none;
+    color: var(--neutral-color-light);
+    flex-grow: 2;
+    font-family: "Open Sans";
+    font-size: 1.5rem;
+    font-weight: 300;
+    height: 3.2rem;
+    
 }
+
+.logo-input::placeholder{
+    padding: 2rem;
+    color: var(--neutral-color-light);
+}
+.home-title {
+    color: var(--primary-color);
+    font-family: "Ubuntu";
+    font-size: 1rem;
+    margin: -0.5rem;
+    padding: 0;
+}
+
+.menu-logo {
+    margin: 0.5rem 4rem;
+    text-align: center;
+}
+
+.header-icons{
+    margin: 0 2.5rem;
+}
+
+.header-icons * {
+    margin: 0 1rem;
+}
+
 
 /* 
 @media screen and (max-width: 720px) {
