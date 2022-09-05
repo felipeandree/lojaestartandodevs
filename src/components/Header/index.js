@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../assets/img/logo.png'; 
+import Logo from '../../Assets/Images/img/logo.png'; 
 import './styles.css'; 
 import 'material-symbols'; 
 
@@ -11,7 +11,7 @@ export function Header() {
 
         </div>
         <input className="logo-input" type="text" />
-        <span className="material-symbols-rounded" >shopping_cart</span>
+        <span className="material-symbols-rounded iconfill" >shopping_cart</span>
         <span className="material-symbols-rounded">menu</span> 
         
       </div>
