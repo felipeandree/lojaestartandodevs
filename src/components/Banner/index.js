@@ -1,4 +1,3 @@
-<<<<<<< HEAD:src/components/Banner/Banner.js
 import { useState } from "react";
 
 const slideStyles = {
@@ -76,17 +75,6 @@ const BannerComponent = ({ slides }) => {
       <div>
         <div onClick={goToPrevious} style={leftArrowStyles}>
           ❰
-=======
-import React from 'react';
-import bannerCamisa from '../../assets/images/img/banner-camisa.png';
-import './styles.css';
-import 'material-symbols';
-
-export function Banner() {
-    return (
-        <div className='banner-camisa'>
-            <img src={bannerCamisa} alt='Baner camisa Estartando Devs' />
->>>>>>> master:src/components/Banner/index.js
         </div>
         <div onClick={goToNext} style={rightArrowStyles}>
           ❱

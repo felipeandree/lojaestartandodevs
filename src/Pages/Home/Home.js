@@ -1,6 +1,6 @@
 import "./styles.css";
 import { Header } from "../../components/Header/index";
-import BannerComponent from "../../components/Banner/Banner";
+import BannerComponent from "../../components/Banner/";
 
 const Home = () => {
   const slides = [
