@@ -1,5 +1,9 @@
 .banner-camisa img{
+<<<<<<< HEAD
+    width: 100%;
+=======
     width: 100vw;
     display: flex;
     padding-bottom: 40px;
+>>>>>>> master
 }
