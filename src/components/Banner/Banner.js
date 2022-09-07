@@ -85,7 +85,7 @@ const BannerComponent = ({ slides }) => {
           ❰
         </div>
         <div onClick={goToNext} style={rightArrowStyles}>
-          hello ❱
+          ❱
         </div>
       </div>
       <div style={slideStylesWidthBackground}></div>
