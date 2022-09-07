@@ -19,8 +19,8 @@ const Home = () => {
   ];
 
   const containerStyles = {
-    width: "620px",
-    height: "460px",
+    width: "100%",
+    height: "520px",
     margin: "0 auto",
   };
 
