@@ -1,4 +1,6 @@
+import React from 'react';
 import { useState } from "react";
+import './styles.css';
 
 const slideStyles = {
   width: "100%",
@@ -18,6 +20,12 @@ const rightArrowStyles = {
   zIndex: 1,
   cursor: "pointer",
   backgroundColor: "#24242400",
+  textShadowColor: "var(--neutral-color-light)",
+  textShadowOffset: {width: 3,
+    height: 3,},
+  textShadowRadius: 10,
+  // fontSize:100,
+  borderWidth:4,
 };
 
 const leftArrowStyles = {
