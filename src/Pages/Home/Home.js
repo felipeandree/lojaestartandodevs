@@ -1,6 +1,7 @@
 import "./styles.css";
 import { Header } from "../../components/Header/index";
 import BannerComponent from "../../components/Banner/";
+import { Ofertas } from "../../components/Ofertas/index";
 
 const Home = () => {
   const slides = [
@@ -30,6 +31,7 @@ const Home = () => {
       <div style={containerStyles}>
         <BannerComponent slides={slides} />
       </div>
+      <Ofertas/>
     </>
   );
 };
