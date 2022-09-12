@@ -1,13 +1,7 @@
-<<<<<<< HEAD:src/pages/Home/Home.js
 import "./Home.css";
 import { Header } from "../../components/Header/Header";
 import BannerComponent from "../../components/Banner/Banner";
-=======
-import "./styles.css";
-import { Header } from "../../components/Header/index";
-import BannerComponent from "../../components/Banner/";
-import { Ofertas } from "../../components/Ofertas/index";
->>>>>>> 8f4d522b9ba8778624d5f45faefeebee9a1334cd:src/Pages/Home/Home.js
+import { Ofertas } from "../../components/Ofertas";
 
 const Home = () => {
   const slides = [
