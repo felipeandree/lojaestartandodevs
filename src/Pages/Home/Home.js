@@ -1,7 +1,7 @@
 import "./styles.css";
 import { Header } from "../../components/Header/index";
 import BannerComponent from "../../components/Banner/";
-import { Ofertas } from "../../components/Ofertas/index";
+import { Ofertas } from "../Ofertas";
 
 const Home = () => {
   const slides = [
