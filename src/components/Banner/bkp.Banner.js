@@ -1,13 +1,11 @@
-import React from 'react';
 import { useState } from "react";
-import './Banner.css';
 
 const slideStyles = {
-  // borderRadius: "10px",
-  backgroundPosition: "center",
-  backgroundSize: "cover",
-  height: "100%",
   width: "100%",
+  height: "100%",
+  // borderRadius: "10px",
+  backgroundSize: "cover",
+  backgroundPosition: "center",
 };
 
 const rightArrowStyles = {
@@ -20,18 +18,11 @@ const rightArrowStyles = {
   zIndex: 1,
   cursor: "pointer",
   backgroundColor: "#24242400",
-  textShadowColor: "var(--neutral-color-light)",
-  textShadowOffset: {width: 3,
-    height: 3,},
-  textShadowRadius: 10,
-  // fontSize:100,
-  borderWidth:4,
 };
 
 const leftArrowStyles = {
   position: "absolute",
   top: "50%",
-  
   transform: "translate(0, -50%)",
   left: "32px",
   fontSize: "45px",

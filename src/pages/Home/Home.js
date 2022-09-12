@@ -1,5 +1,5 @@
-import "./styles.css";
-import { Header } from "../../components/Header/index";
+import "./Home.css";
+import { Header } from "../../components/Header/Header";
 import BannerComponent from "../../components/Banner/Banner";
 
 const Home = () => {
@@ -19,8 +19,8 @@ const Home = () => {
   ];
 
   const containerStyles = {
-    width: "620px",
-    height: "460px",
+    width: "100%",
+    height: "520px",
     margin: "0 auto",
   };
 
