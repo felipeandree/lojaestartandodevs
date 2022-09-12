@@ -26,11 +26,18 @@ const rightArrowStyles = {
   textShadowRadius: 10,
   // fontSize:100,
   borderWidth:4,
+  textShadowColor: "var(--neutral-color-light)",
+  textShadowOffset: {width: 3,
+    height: 3,},
+  textShadowRadius: 10,
+  // fontSize:100,
+  borderWidth:4,
 };
 
 const leftArrowStyles = {
   position: "absolute",
   top: "50%",
+  
   
   transform: "translate(0, -50%)",
   left: "32px",
