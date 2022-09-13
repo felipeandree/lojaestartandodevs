@@ -7,7 +7,7 @@ export const Slider = () => {
     return(
         
         <Container> 
-            <ImageContainer /> // src
+            <ImageContainer  />  
         </Container>
     )
 }
