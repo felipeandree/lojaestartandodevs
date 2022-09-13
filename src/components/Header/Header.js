@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../assets/images/img/logo.png'; 
+import Logo from '../../Assets/Images/img/logo.png'; 
 import './Header.css'; 
 import 'material-symbols'; 
 
