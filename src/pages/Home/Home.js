@@ -31,6 +31,7 @@ const Home = () => {
       <div style={containerStyles}>
         <BannerComponent slides={slides} />
       </div>
+      
       <Slider />
     </>
   );
