@@ -1,7 +1,7 @@
 import "./Home.css";
 import { Header } from "../../components/Header/Header";
 import BannerComponent from "../../components/Banner/Banner";
-import { Ofertas } from "../../components/Ofertas";
+import { Slider } from "../../components/Slider";
 
 const Home = () => {
   const slides = [
@@ -31,7 +31,7 @@ const Home = () => {
       <div style={containerStyles}>
         <BannerComponent slides={slides} />
       </div>
-      <Ofertas/>
+      <Slider />
     </>
   );
 };

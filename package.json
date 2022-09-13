@@ -51,7 +51,6 @@
     "type": "git",
     "url": "git+https://github.com/felipeandree/lojaestartandodevs.git"
   },
-  "homepage": "https://github.com/felipeandree/lojaestartandodevs",
   "author": "Atila Iglesias & Felipe Andre",
   "license": "ISC",
   "bugs": {
