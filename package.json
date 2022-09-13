@@ -6,7 +6,9 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "graphql": "^16.6.0",
     "material-symbols": "^0.2.9",
+    "nodemon": "^2.0.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",
@@ -18,7 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -47,9 +51,13 @@
     "type": "git",
     "url": "git+https://github.com/felipeandree/lojaestartandodevs.git"
   },
+  "homepage": "https://github.com/felipeandree/lojaestartandodevs",
   "author": "Atila Iglesias & Felipe Andre",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/felipeandree/lojaestartandodevs/issues"
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }

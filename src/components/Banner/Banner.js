@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from "react";
-import './Banner';
+import './Banner.css';
 
 const slideStyles = {
   // borderRadius: "10px",
@@ -31,6 +31,7 @@ const rightArrowStyles = {
 const leftArrowStyles = {
   position: "absolute",
   top: "50%",
+  
   
   transform: "translate(0, -50%)",
   left: "32px",
