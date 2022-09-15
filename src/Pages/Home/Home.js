@@ -1,8 +1,7 @@
 import "./Home.css";
 import { Header } from "../../components/Header/Header";
 import BannerComponent from "../../components/Banner/Banner";
-import { Slider } from "../../components/Slider";
-
+import { SliderCard } from "../../components/Slider";
 
 const Home = () => {
   const slides = [
@@ -32,8 +31,7 @@ const Home = () => {
       <div style={containerStyles}>
         <BannerComponent slides={slides} />
       </div>
-      
-      <Slider />
+      <SliderCard />
     </>
   );
 };
