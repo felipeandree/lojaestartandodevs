@@ -5,7 +5,8 @@ import 'material-symbols';
 
 export function Header() {
     return (
-      <div className="header"> 
+      <div className="header" >
+        
         <div className="menu-logo">
           <img className="logo-img" src={Logo} alt="logo" />
           <h1 className="home-title">LOJA</h1>
@@ -19,6 +20,6 @@ export function Header() {
         </div>
         
       </div>
-
+  
     );
 }

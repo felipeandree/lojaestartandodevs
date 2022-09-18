@@ -1,20 +1,19 @@
 import styled from "styled-components";
 
+
 export const CardNovidade = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 0px 4px;
+    padding: 14px 4px;
     gap: 8px;
     background-color: #242424;
     width: 100%;
+    
   `
   export const CardNovidadeSections = styled.div`
       display: flex;
-      align-items: center;
-      flex-direction: row;
-      
+      justify-content: center;
+      flex-wrap: wrap;
     `
 
   export const Titulo = styled.h2`

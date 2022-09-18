@@ -21,7 +21,7 @@ const Home = () => {
 
   const containerStyles = {
     width: "100%",
-    height: "520px",
+    height: "720px",
     margin: "0 auto",
   };
 
