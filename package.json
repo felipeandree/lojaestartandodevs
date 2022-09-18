@@ -8,7 +8,9 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
     "graphql": "^16.6.0",
+    "headers-polyfill": "^3.1.0",
     "material-symbols": "^0.2.9",
+    "msw": "^0.42.3",
     "nodemon": "^2.0.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -42,9 +44,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "msw": "^0.45.0"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
