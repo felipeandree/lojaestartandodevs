@@ -1,7 +1,7 @@
 import React from "react";
-import Foto01 from "../../assets/Images/img/mousepad.png";
-import Foto02 from "../../assets/Images/img/chaveiro.png";
-import Foto03 from "../../assets/Images/img/caneca.png";
+import Foto01 from "../../assets/images/img/mousepad.png";
+import Foto02 from "../../assets/images/img/chaveiro.png";
+import Foto03 from "../../assets/images/img/caneca.png";
 import { Titulo } from "./styles"
 import { CardNovidade } from "./styles";
 import { Text } from "./styles"; 
