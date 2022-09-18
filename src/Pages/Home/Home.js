@@ -1,7 +1,7 @@
 import "./Home.css";
 import { Header } from "../../components/Header/Header";
 import BannerComponent from "../../components/Banner/Banner";
-import { Slider } from "../../components/Slider/"
+import { Slider } from "../../components/Slider"
 
 const Home = () => {
   const slides = [
