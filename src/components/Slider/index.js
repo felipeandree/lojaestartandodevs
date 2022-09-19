@@ -25,7 +25,7 @@ export const Slider = () => {
 
             <Price>
                 <p style={{color: "#81CAA8"}} >A partir de R$19,90</p>
-              <p >Desenvolva com estilo!</p>
+              <p style={{color: "#81CAA8"}} >Desenvolva com estilo!</p>
             </Price>
         </CardImg>
         <CardImg>

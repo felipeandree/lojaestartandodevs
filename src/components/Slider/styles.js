@@ -4,7 +4,6 @@ import styled from "styled-components";
 export const CardNovidade = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 14px 4px;
     gap: 8px;
     background-color: #242424;
     width: 100%;
@@ -14,6 +13,7 @@ export const CardNovidade = styled.div`
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      padding: 14px 4px;
     `
 
   export const Titulo = styled.h2`
