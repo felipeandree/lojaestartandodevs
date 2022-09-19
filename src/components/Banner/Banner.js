@@ -46,17 +46,17 @@ const sliderStyles = {
   position: "relative",
   height: "100%",
 };
+//NAVIGATION BUTTONS//
+// const dotsContainerStyles = {
+//   display: "flex",
+//   justifyContent: "center",
+// };
 
-const dotsContainerStyles = {
-  display: "flex",
-  justifyContent: "center",
-};
-
-const dotStyle = {
-  margin: "0 3px",
-  cursor: "pointer",
-  fontSize: "20px",
-};
+// const dotStyle = {
+//   margin: "0 3px",
+//   cursor: "pointer",
+//   fontSize: "20px",
+// };
 
 const BannerComponent = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -71,9 +71,10 @@ const BannerComponent = ({ slides }) => {
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
-  const goToSlide = (slideIndex) => {
-    setCurrentIndex(slideIndex);
-  };
+  //NAVIGATION BUTTONS//
+  // const goToSlide = (slideIndex) => {
+  //   setCurrentIndex(slideIndex);
+  // };
   const slideStylesWidthBackground = {
     ...slideStyles,
     backgroundImage: `url(${slides[currentIndex].url})`,
@@ -90,7 +91,7 @@ const BannerComponent = ({ slides }) => {
         </div>
       </div>
       <div style={slideStylesWidthBackground}></div>
-      <div style={dotsContainerStyles}>
+      {/* <div style={dotsContainerStyles}>
         {slides.map((slide, slideIndex) => (
           <div
             style={dotStyle}
@@ -100,7 +101,7 @@ const BannerComponent = ({ slides }) => {
             ●
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
