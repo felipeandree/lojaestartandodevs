@@ -2,4 +2,6 @@
 
 <h2>Repositório da Loja feito no curso Estartando Devs <h2>
 
-Desenvolvido por @felipeandree e https://github.com/junglereef
+Desenvolvido por: 
+  Atila Iglesias [https://github.com/junglereef]
+  Felipe André [https://github.com/felipeandree]
