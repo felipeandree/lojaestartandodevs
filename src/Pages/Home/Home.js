@@ -1,7 +1,7 @@
 import "./Home.css";
 import { Header } from "../../components/Header/Header";
-import { slides, BannerComponent } from "../../components/Banner/Banner";
-import { Slider } from "../../components/Slider"
+import { Slides, SlidesComponent } from "../../components/Slider/Slider";
+import { Offers } from "../../components/Offers"
 
 const Home = () => {
   
@@ -16,9 +16,9 @@ const Home = () => {
     <>
       <Header />
       <div style={containerStyles}>
-        <BannerComponent slides={slides} />
+        <SlidesComponent slides={Slides} />
       </div>
-      <Slider />
+      <Offers />
     </>
   );
 };
