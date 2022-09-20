@@ -40,19 +40,11 @@ export const Offers = () => {
       <CardOfferSections>
         <Swiper
           slidesPerView={1}
-          spaceBetween={5}
+          spaceBetween={2}
           breakpoints={{
             "@0.00": {
               slidesPerView: 1,
-              spaceBetween: 5,
-            },
-            "@0.75": {
-              slidesPerView: 2,
-              spaceBetween: 10,
-            },
-            "@1.00": {
-              slidesPerView: 3,
-              spaceBetween: 20,
+              spaceBetween: 2,
             },
           }}
           modules={[Pagination]}
