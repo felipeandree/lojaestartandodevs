@@ -1,7 +1,7 @@
 import "./Home.css";
 import { Header } from "../../components/Header/Header";
 import { Slides, SlidesComponent } from "../../components/Slider/Slider";
-import { Offers } from "../../components/Offers"
+import { Offers } from "../../components/Offers/Offers"
 
 const Home = () => {
   

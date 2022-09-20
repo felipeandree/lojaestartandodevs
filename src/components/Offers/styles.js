@@ -12,43 +12,44 @@ const CardOfferSections = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 14px 4px;
+  padding: 2rem 4px;
   flex-direction: row;
   `;
 
 const SectionTitle = styled.h2`
-  display: flex;
-  text-align: start;
-  padding: 5rem;
   color: #ffff;
+  display: flex;
+  padding: 1rem;
+  text-align: start;
 `;
 const Card = styled.div`
+margin-left: 1rem;
   `
 const CardTitle = styled.h2`
-    color: white;
-    margin-bottom: 2rem;
-    display: flex;
-    top: 0;
+  color: white;
+  display: flex;
+  margin-bottom: 5rem;
+  top: 0;
 `;
 const CardBottom = styled.div`
-display: flex;
-  justify-content: flex-start;
   align-items: center;
-  padding: 4px;
+  display: flex;
   gap: 8px;
+  justify-content: flex-start;
 `;
 const CardImg = styled.div`
   height: 100%;
-  width: 15rem;
+  width: 18rem;
+
   > img {
     border-radius: 10%;
   }
 `;
 
 const Price = styled.div`
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 15px;
 
   > div {
@@ -58,9 +59,11 @@ const Price = styled.div`
     font-family: Open Sans;
     line-height: 20%;
   }
+
   > .info {
     color: #81caa8;
   }
+
   > .slogan {
     color: #fff;
   }
