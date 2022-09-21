@@ -28,6 +28,10 @@
 - [ ] Mock Service Worker
 - [ ] Categorias de Produtos
 - [ ] Footer
+- [ ] Menu
+- [ ] Footer
+- [ ] CRUD
+
 
 ### :handshake: Members 
 

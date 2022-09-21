@@ -1,11 +1,4 @@
-import { setupWorker, rest } from "msw";
-import { products } from "./data";
+import { setupWorker } from 'msw';
+import { handlers } from './handlers';
 
-export const worker = setupWorker(
-    rest.get('/produtos', (req, res, ctx) => {
-        return res(
-            ctx.status(200),
-            ctx.json({data: products})
-        )
-    })
-)
+export const worker = setupWorker(...handlers);
