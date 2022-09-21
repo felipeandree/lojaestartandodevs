@@ -27,7 +27,6 @@
 - [ ] React DOM
 - [ ] Mock Service Worker
 - [ ] Categorias de Produtos
-- [ ] Footer
 - [ ] Menu
 - [ ] Footer
 - [ ] CRUD
