@@ -7,6 +7,7 @@ export const products = [
     name: "Mousepad Dark",
     price: 19.9,
     sizes: ["P", "M", "G"],
+    alt: "Foto de mousepad"
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ export const products = [
     name: "Chaveiro Devs",
     price: 9.9,
     sizes: ["P", "M", "G"],
+    alt: "Foto de mousepad"
   },
   {
     id: 3,
@@ -25,5 +27,16 @@ export const products = [
     name: "Caneca Back-End",
     price: 25.5,
     sizes: ["P", "M", "G"],
+    alt: "Foto de mousepad"
+  },
+  {
+    id: 3,
+    colors: ["#000000, #FAFAFA"],
+    description: "Description",
+    image: "/img/caneca.png",
+    name: "Caneca Back-End",
+    price: 25.5,
+    sizes: ["P", "M", "G"],
+    alt: "Foto de mousepad"
   },
 ];

@@ -2,6 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import axios from 'axios';
+import { products } from '../../mocks/products';
 import {
   CardOffer,
   CardOfferSections,
@@ -53,22 +54,27 @@ export const Offers = () => {
           className='mySwiper'
         >
           <SwiperSlide>
+          {products.map((item) => {
+          return (
             <Card>
-              <CardTitle>Mousepad Dark</CardTitle>
+              <CardTitle>{item.name}</CardTitle>
               <CardBottom>
                 <CardImg>
                   <img
-                    src={fotoOferta[0].url}
-                    alt='Mousepad Dark Estartando Devs'
+                    src={item.image}
+                    alt={item.alt}
                   />
                 </CardImg>
 
                 <Price>
-                  <p className='info'>A partir de R$19,90</p>
-                  <p className='slogan'>Desenvolva com estilo!</p>
+                  <p className='info'>{item.price}</p>
+                  <p className='slogan'>{item.description}</p>
                 </Price>
               </CardBottom>
             </Card>
+           
+          );
+        })}
           </SwiperSlide>
           <SwiperSlide>
             <Card>

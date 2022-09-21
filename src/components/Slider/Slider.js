@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 
+
 const Slides = [
   {
     url: "/img/banner-camisa.png",
