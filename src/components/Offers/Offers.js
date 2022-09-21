@@ -31,7 +31,6 @@ const fotoOferta = [
   },
 ];
 
-jest.mock('axios');
 
 export const Offers = () => {
   return (

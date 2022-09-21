@@ -60,7 +60,6 @@
     "workerDirectory": "public"
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0",
     "whatwg-fetch": "^3.6.2"
   }
 }
