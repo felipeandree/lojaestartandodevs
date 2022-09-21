@@ -1,6 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
+import axios from 'axios';
 import {
   CardOffer,
   CardOfferSections,
@@ -29,6 +30,8 @@ const fotoOferta = [
     title: "Oferta-3",
   },
 ];
+
+jest.mock('axios');
 
 export const Offers = () => {
   return (

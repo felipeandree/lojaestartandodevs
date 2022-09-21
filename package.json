@@ -18,15 +18,14 @@
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.5",
     "swiper": "^8.4.2",
+    "swr": "^1.3.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -61,6 +60,7 @@
     "workerDirectory": "public"
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "whatwg-fetch": "^3.6.2"
   }
 }
