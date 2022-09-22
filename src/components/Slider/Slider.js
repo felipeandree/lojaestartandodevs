@@ -6,29 +6,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 
-
-const Slides = [
-  {
-    url: "/img/banner-camisa.png",
-    title: "Slide-1",
-  },
-  {
-    url: "/img/banner-canecas.png",
-    title: "Slide-2",
-  },
-  {
-    url: "/img/banner-almofadas.png",
-    title: "Slide-3",
-  },
-];
-
-
-
 const SlidesComponent = ({ slides }) => {
 
   return (
     <>
-    <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+      
+      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+        
       <SwiperSlide><img src={slides[0].url} alt="" /></SwiperSlide>
       <SwiperSlide><img src={slides[1].url} alt=""/></SwiperSlide>
       <SwiperSlide><img src={slides[2].url} alt="" /></SwiperSlide>
@@ -38,4 +22,4 @@ const SlidesComponent = ({ slides }) => {
   );
 };
 
-export { SlidesComponent, Slides };
+export { SlidesComponent };

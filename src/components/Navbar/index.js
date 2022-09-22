@@ -5,7 +5,7 @@ export const Navbar = () => {
     return(
         <Icons> 
             <div> 
-                <span class="material-symbols-outlined">favorite</span>
+                <span className="material-symbols-outlined">favorite</span>
             </div>
 
             <div> 
@@ -13,7 +13,7 @@ export const Navbar = () => {
             </div>
 
             <div>
-                <span class="material-symbols-outlined">shopping_cart</span>
+                <span className="material-symbols-outlined">shopping_cart</span>
             </div>
         </Icons>
             

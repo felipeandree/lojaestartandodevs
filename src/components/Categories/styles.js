@@ -3,7 +3,7 @@ import styled from "styled-components";
 const CardOffer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  // gap: 8px;
   background-color: #242424;
   width: 100%;
   overflow: hidden;
@@ -15,7 +15,7 @@ const CardOfferSections = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  // padding: 2rem;
+  padding: 2rem;
   flex-direction: row;
   `;
 
@@ -50,35 +50,12 @@ const CardImg = styled.div`
   }
 `;
 
-const CardRight = styled.div`
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-
-  > div {
-    text-align: left;
-    vertical-align: top;
-    font-size: 16px;
-    font-family: Open Sans;
-    line-height: 20%;
-  }
-
-  > .price {
-    color: #81caa8;
-  }
-
-  > .description {
-    color: #fff;
-  }
-`;
 export {
   Card,
   CardBottom,
   CardImg,
   CardOffer,
   CardOfferSections,
-  CardRight,
   CardTitle,
   SectionTitle,
 };
