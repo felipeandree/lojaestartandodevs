@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
-import axios from 'axios';
+// import axios from 'axios';
 import { products } from '../../mocks/products';
 import {
   CardOffer,
