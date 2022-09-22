@@ -1,0 +1,22 @@
+import { Icons } from "./styles";
+import "material-symbols";
+
+export const Navbar = () => {
+    return(
+        <Icons> 
+            <div> 
+                <span class="material-symbols-outlined">favorite</span>
+            </div>
+
+            <div> 
+                <img src="/img/logo-navbar.png" alt="Foto de Logo" ></img>
+            </div>
+
+            <div>
+                <span class="material-symbols-outlined">shopping_cart</span>
+            </div>
+        </Icons>
+            
+       
+    );
+}

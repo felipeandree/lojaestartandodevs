@@ -1,8 +1,9 @@
 // import useSWR from "swr"
-import "./Home.css";
+import "./home.css";
 import { Header } from "../../components/Header/Header";
 import { Slides, SlidesComponent } from "../../components/Slider/Slider";
-import { Offers } from "../../components/Offers/Offers"
+import { Offers } from "../../components/Offers/Offers";
+import { Navbar } from "../../components/Navbar/index";
 
 const Home = () => {
   
@@ -20,6 +21,7 @@ const Home = () => {
         <SlidesComponent slides={Slides} />
       </div>
       <Offers />
+      <Navbar />
     </>
   );
 };
