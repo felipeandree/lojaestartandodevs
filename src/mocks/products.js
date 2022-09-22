@@ -41,6 +41,61 @@ export const products = [
     price: 20.50,
     sizes: ["P", "M", "G"],
     alt: "Foto de caneca",
+    type: "offers"
+  },
+  {
+    id: 5,
+    colors: ["#000000, #FAFAFA"],
+    description: "Caneca Back-End Dev Estartando Devs",
+    image: "/img/Featured-Caneca-1.png",
+    name: "Caneca Back-End",
+    price: 20.50,
+    sizes: ["P", "M", "G"],
+    alt: "Foto de caneca",
+    type:"featured"
+  },
+  {
+    id: 6,
+    colors: ["#000000, #FAFAFA"],
+    description: "Caneca Back-End Dev Estartando Devs",
+    image: "/img/Featured-Caneca-2.png",
+    name: "Caneca Back-End",
+    price: 20.50,
+    sizes: ["P", "M", "G"],
+    alt: "Foto de caneca",
+    type:"featured"
+  },
+  {
+    id: 7,
+    colors: ["#000000, #FAFAFA"],
+    description: "Caneca Back-End Dev Estartando Devs",
+    image: "/img/Featured-Caneca-3.png",
+    name: "Caneca Back-End",
+    price: 20.50,
+    sizes: ["P", "M", "G"],
+    alt: "Foto de caneca",
+    type:"featured"
+  },
+  {
+    id: 8,
+    colors: ["#000000, #FAFAFA"],
+    description: "Caneca Back-End Dev Estartando Devs",
+    image: "/img/Featured-Caneca-4.png",
+    name: "Caneca Back-End",
+    price: 20.50,
+    sizes: ["P", "M", "G"],
+    alt: "Foto de caneca",
+    type:"featured"
+  },
+  {
+    id: 9,
+    colors: ["#000000, #FAFAFA"],
+    description: "Caneca Back-End Dev Estartando Devs",
+    image: "/img/Featured-Caneca-5.png",
+    name: "Caneca Back-End",
+    price: 20.50,
+    sizes: ["P", "M", "G"],
+    alt: "Foto de caneca",
     type:"featured"
   },
 ];

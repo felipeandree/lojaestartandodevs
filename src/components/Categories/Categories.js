@@ -1,7 +1,5 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-// import { Pagination, Navigation } from "swiper";
-// import axios from 'axios';
 import { products } from "../../mocks/products";
 import {
   Card,
@@ -9,30 +7,30 @@ import {
   CardImg,
   CardOffer,
   CardOfferSections,
-  CardRight,
   CardTitle,
   SectionTitle,
 } from "./styles";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "./styles.css";
+import "./Categories.css"
 import "../../assets/styles/global.css";
 
-export const Offers = () => {
-  return (
-    <CardOffer>
-      <SectionTitle>Ofertas</SectionTitle>
+export const Categories = () => {
+    return (
+      <CardOffer>
+      <SectionTitle>Categorias</SectionTitle>
       
       {products.length > 0 ? (
         <CardOfferSections>
           <Swiper
-            slidesPerView={1}
+            slidesPerView={2}
             spaceBetween={5}
-            className='mySwiper'>
+            className='mySwiper'
+            >
             
             {products.map((item) => {
-              if (item.type === "offers") {
+              if (item.type) {
                 return (
                   <SwiperSlide key={item.id}>
                     <Card>
@@ -41,12 +39,6 @@ export const Offers = () => {
                         <CardImg>
                           <img src={item.image} alt={item.alt} />
                         </CardImg>
-                        <CardRight>
-                          <p className='price'>
-                            A partir de {item.price.toFixed(2)}
-                          </p>
-                          <p className='description'>{item.description}</p>
-                        </CardRight>
                       </CardBottom>
                     </Card>
                   </SwiperSlide>
@@ -61,3 +53,5 @@ export const Offers = () => {
     </CardOffer>
   );
 };
+
+  

@@ -1,54 +1,65 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper";
-
+import { products } from "../../mocks/products";
+import {
+  Card,
+  CardBottom,
+  CardImg,
+  CardOffer,
+  CardOfferSections,
+  CardRight,
+  CardTitle,
+  SectionTitle,
+} from "./styles";
+// import { Pagination, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./Featured.css"
 import "../../assets/styles/global.css";
 
-export default function App() {
+export const Featured = () => {
     return (
-      <>
-        <Swiper
-          slidesPerView={1}
-          spaceBetween={10}
-          pagination={{
-            clickable: true,
-          }}
-          breakpoints={{
-            "@0.00": {
-              slidesPerView: 1,
-              spaceBetween: 10,
-            },
-            "@0.75": {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            "@1.00": {
-              slidesPerView: 3,
-              spaceBetween: 40,
-            },
-            "@1.50": {
-              slidesPerView: 4,
-              spaceBetween: 50,
-            },
-          }}
-          modules={[Pagination]}
-          className="mySwiper"
-        >
-          <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-          <SwiperSlide>Slide 5</SwiperSlide>
-          <SwiperSlide>Slide 6</SwiperSlide>
-          <SwiperSlide>Slide 7</SwiperSlide>
-          <SwiperSlide>Slide 8</SwiperSlide>
-          <SwiperSlide>Slide 9</SwiperSlide>
-        </Swiper>
-      </>
-    );
-  }
+      <CardOffer>
+      <SectionTitle>Novidades</SectionTitle>
+      
+      {products.length > 0 ? (
+        <CardOfferSections>
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={5}
+            className='mySwiper'>
+            
+            {products.map((item) => {
+              if (item.type === "featured") {
+                return (
+                  <SwiperSlide key={item.id}>
+                    <Card>
+                      
+                      <CardBottom>
+                        <CardImg>
+                          <img src={item.image} alt={item.alt} />
+                        </CardImg>
+                        <CardRight>
+                        <CardTitle>{item.name}</CardTitle>
+                          <p className='price'>
+                            A partir de {item.price.toFixed(2)}
+                          </p>
+                          <p className='description'>{item.description}</p>
+                        </CardRight>
+                      </CardBottom>
+                    </Card>
+                  </SwiperSlide>
+                );
+              }
+              return null;
+            })}
+
+          </Swiper>
+        </CardOfferSections>
+      ) : null}
+    </CardOffer>
+  );
+};
+
   
