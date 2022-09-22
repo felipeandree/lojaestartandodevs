@@ -20,12 +20,11 @@ import "./styles.css";
 import "../../assets/styles/global.css";
 
 
+
 export const Offers = () => {
   return (
     <CardOffer>
-      <SectionTitle>
-        Ofertas
-      </SectionTitle>
+      <SectionTitle>Ofertas</SectionTitle>
 
       <CardOfferSections>
         <Swiper
@@ -54,27 +53,32 @@ export const Offers = () => {
         >
           <SwiperSlide>
             {products.map((item) => {
-              return (
-                <Card key={item.id}>
-                  <CardTitle>{item.name}</CardTitle>
-                  <CardBottom>
-                    <CardImg>
-                      <img src={item.image} alt={item.alt} />
-                    </CardImg>
+              if (item.type === "offers") {
+                return (
+                  <Card key={item.id}>
+                    <CardTitle>{item.name}</CardTitle>
+                    <CardBottom>
+                      <CardImg>
+                        <img src={item.image} alt={item.alt} />
+                      </CardImg>
 
-                    <Price>
-                      <p className='price'>
-                        A partir de {item.price.toFixed(2)}
-                      </p>
-                      <p className='description'>{item.description}</p>
-                    </Price>
-                  </CardBottom>
-                </Card>
-              );
+                      <Price>
+                        <p className='price'>
+                          A partir de {item.price.toFixed(2)}
+                        </p>
+                        <p className='description'>{item.description}</p>
+                      </Price>
+                    </CardBottom>
+                  </Card>
+                );
+              }
+              return null
             })}
           </SwiperSlide>
         </Swiper>
       </CardOfferSections>
     </CardOffer>
+
+    
   );
 };
