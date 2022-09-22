@@ -36,3 +36,7 @@ body {
 .iconfill {
   font-variation-settings: 'FILL' 1;
 }
+
+.swiper-button-next, .swiper-button-prev {
+  color:#81CAA8;
+}

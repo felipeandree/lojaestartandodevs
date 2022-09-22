@@ -6,6 +6,9 @@ const CardOffer = styled.div`
   gap: 8px;
   background-color: #242424;
   width: 100%;
+  overflow: hidden;
+  // margin: 0 auto;
+  // height: 100%;
 `;
 const CardOfferSections = styled.div`
   color: "#81CAA8" 
@@ -16,15 +19,15 @@ const CardOfferSections = styled.div`
   flex-direction: row;
   `;
 
-const SectionTitle = styled.h2`
+const SectionTitle = styled.h1`
   color: #ffff;
   display: flex;
   padding: 1rem;
   text-align: start;
 `;
 const Card = styled.div`
-margin-left: 1rem;
-  `
+  margin: 1rem;
+`;
 const CardTitle = styled.h2`
   color: white;
   display: flex;
@@ -60,11 +63,11 @@ const Price = styled.div`
     line-height: 20%;
   }
 
-  > .info {
+  > .price {
     color: #81caa8;
   }
 
-  > .slogan {
+  > .description {
     color: #fff;
   }
 `;
