@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-export const Text_footer = styled.footer`
+export const Text_Footer = styled.footer`
     display: flex;
     flex-direction: row;
     justify-content: center;    

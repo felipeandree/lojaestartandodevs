@@ -1,11 +1,11 @@
-import { Text_footer } from "./styles"
+import { Text_Footer } from "./styles"
 
 export const Footer = () => {
     return (
             
-                <Text_footer> 
+                <Text_Footer> 
                      © ESTARTANDO DEVS 2022 <br/> TODOS OS DIREITOS RESERVADOS
-                </Text_footer>
+                </Text_Footer>
         
     )             
 }
