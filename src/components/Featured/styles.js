@@ -44,7 +44,7 @@ const CardBottom = styled.div`
 `;
 const CardImg = styled.div`
   height: 75%;
-  width: 50rem;
+  width: 25rem;
 
   > img {
     border-radius: 5%;

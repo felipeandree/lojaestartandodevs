@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { products } from "../../mocks/products";
+import { categories } from "../../mocks/categories";
 import {
   Card,
   CardBottom,
@@ -13,6 +13,7 @@ import {
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/grid";
 import "./Categories.css"
 import "../../assets/styles/global.css";
 
@@ -21,16 +22,19 @@ export const Categories = () => {
       <CardOffer>
       <SectionTitle>Categorias</SectionTitle>
       
-      {products.length > 0 ? (
+      {categories.length > 0 ? (
         <CardOfferSections>
           <Swiper
             slidesPerView={2}
-            spaceBetween={5}
+              pagination={false}
+              allowTouchMove={ false }
+            grid={{
+              rows: 2,
+            }}
             className='mySwiper'
             >
             
-            {products.map((item) => {
-              if (item.type) {
+            {categories.map((item) => {
                 return (
                   <SwiperSlide key={item.id}>
                     <Card>
@@ -43,8 +47,6 @@ export const Categories = () => {
                     </Card>
                   </SwiperSlide>
                 );
-              }
-              return null;
             })}
 
           </Swiper>
