@@ -23,7 +23,7 @@ const SectionTitle = styled.h1`
   color: #ffff;
   display: flex;
   padding: 1rem;
-  text-align: start;
+  text-align: center;
 `;
 const Card = styled.div`
   margin: 1rem;
@@ -33,6 +33,7 @@ const CardTitle = styled.h2`
   color: white;
   display: flex;
   margin-bottom: 5rem;
+  text-align: center;
   top: 0;
 `;
 const CardBottom = styled.div`
@@ -43,7 +44,7 @@ const CardBottom = styled.div`
 `;
 const CardImg = styled.div`
   height: 100%;
-  width: 18rem;
+  width: 15rem;
 
   > img {
     border-radius: 10%;

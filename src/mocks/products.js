@@ -2,6 +2,7 @@ export const products = [
   {
     id: 1,
     colors: ["#000000, #FAFAFA"],
+    category: "Mousepads",
     description: "Mousepad Light Estartando Devs",
     image: "/img/mousepad.png",
     name: "Mousepad Dark",
@@ -13,6 +14,7 @@ export const products = [
   {
     id: 2,
     colors: ["#000000, #FAFAFA"],
+    category: "Chaveiros",
     description: "Chaveiro Estartando Devs",
     image: "/img/chaveiro.png",
     name: "Chaveiro Devs",
@@ -24,6 +26,7 @@ export const products = [
   {
     id: 3,
     colors: ["#000000, #FAFAFA"],
+    category: "Canecas",
     description: "Caneca Front-End Estartando Devs",
     image: "/img/caneca.png",
     name: "Caneca Front-End",
@@ -35,6 +38,7 @@ export const products = [
   {
     id: 4,
     colors: ["#000000, #FAFAFA"],
+    category: "Canecas",
     description: "Caneca Back-End Dev Estartando Devs",
     image: "/img/caneca.png",
     name: "Caneca Back-End",
@@ -46,6 +50,7 @@ export const products = [
   {
     id: 5,
     colors: ["#000000, #FAFAFA"],
+    category: "Canecas",
     description: "Caneca Back-End Dev Estartando Devs",
     image: "/img/Featured-Caneca-1.png",
     name: "Caneca Back-End",
@@ -57,6 +62,7 @@ export const products = [
   {
     id: 6,
     colors: ["#000000, #FAFAFA"],
+    category: "Canecas",
     description: "Caneca Back-End Dev Estartando Devs",
     image: "/img/Featured-Caneca-2.png",
     name: "Caneca Back-End",
@@ -68,6 +74,7 @@ export const products = [
   {
     id: 7,
     colors: ["#000000, #FAFAFA"],
+    category: "Canecas",
     description: "Caneca Back-End Dev Estartando Devs",
     image: "/img/Featured-Caneca-3.png",
     name: "Caneca Back-End",
@@ -79,6 +86,7 @@ export const products = [
   {
     id: 8,
     colors: ["#000000, #FAFAFA"],
+    category: "Canecas",
     description: "Caneca Back-End Dev Estartando Devs",
     image: "/img/Featured-Caneca-4.png",
     name: "Caneca Back-End",
@@ -90,6 +98,7 @@ export const products = [
   {
     id: 9,
     colors: ["#000000, #FAFAFA"],
+    category: "Canecas",
     description: "Caneca Back-End Dev Estartando Devs",
     image: "/img/Featured-Caneca-5.png",
     name: "Caneca Back-End",

@@ -1,8 +1,7 @@
-import React from "react";
 import "./Header.css";
 import "material-symbols";
 
-export function Header() {
+export function Header({ setMenuIsVisible }) {
   return (
     <div className='header'>
       <div className='menu-logo'>
@@ -15,7 +14,13 @@ export function Header() {
         <span className='material-symbols-outlined iconfill'>
           shopping_cart
         </span>
-        <span className='material-symbols-outlined'>menu</span>
+
+        <span
+          className='material-symbols-outlined'
+          onClick={() => setMenuIsVisible(true)}
+        >
+          menu
+        </span>
       </div>
     </div>
   );
