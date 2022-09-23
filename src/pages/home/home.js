@@ -8,6 +8,7 @@ import { Navbar } from "../../components/Navbar/index";
 import { Featured } from "../../components/Featured/Featured";
 import { Categories } from "../../components/Categories/Categories"
 import { MenuMobile} from "../../components/MenuMobile/MenuMobile.js"
+import { Footer } from "../../components/Footer"; 
 
 const Home = () => {
   const containerStyles = {
@@ -21,7 +22,7 @@ const Home = () => {
   return (
     <>
       <MenuMobile
-          menuIsVisible={menuIsVisible}
+        menuIsVisible={menuIsVisible}
         setMenuIsVisible={setMenuIsVisible}/>
       <Header setMenuIsVisible={setMenuIsVisible} />
       
@@ -32,6 +33,7 @@ const Home = () => {
       <Featured />
       <Categories/>
       <Navbar />
+      <Footer />
     </>
   );
 };
