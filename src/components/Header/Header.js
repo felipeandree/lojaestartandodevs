@@ -1,11 +1,7 @@
-import React, {useState} from "react";
 import "./Header.css";
-import { MenuMobile} from "../MenuMobile/MenuMobile.js"
 import "material-symbols";
 
-export function Header() {
-
-  const[menuIsVisible, setMenuIsVisible] = useState(true)
+export function Header({ setMenuIsVisible }) {
   return (
     <div className='header'>
       <div className='menu-logo'>
@@ -18,10 +14,13 @@ export function Header() {
         <span className='material-symbols-outlined iconfill'>
           shopping_cart
         </span>
-        <MenuMobile
-          menuIsVisible={menuIsVisible}
-        setMenuIsVisible={setMenuIsVisible}/>
-        <span className='material-symbols-outlined'>menu</span>
+
+        <span
+          className='material-symbols-outlined'
+          onClick={() => setMenuIsVisible(true)}
+        >
+          menu
+        </span>
       </div>
     </div>
   );
