@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import "./home.css";
+
 import { Header } from "../../components/Header/Header";
 import { SlidesComponent } from "../../components/Slider/Slider";
 import { slides } from "../../mocks/slides";
