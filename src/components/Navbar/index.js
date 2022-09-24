@@ -3,7 +3,7 @@ import "material-symbols";
 
 export const Navbar = () => {
     return(
-        <Icons> 
+        <Icons > 
             <div> 
                 <span className="material-symbols-outlined">favorite</span>
             </div>

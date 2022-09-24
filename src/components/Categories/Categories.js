@@ -19,7 +19,7 @@ import "../../assets/styles/global.css";
 
 export const Categories = () => {
     return (
-      <CardOffer>
+      <CardOffer className="homeSection">
       <SectionTitle>Categorias</SectionTitle>
       
       {categories.length > 0 ? (

@@ -20,7 +20,7 @@ import "../../assets/styles/global.css";
 
 export const Featured = () => {
     return (
-      <CardOffer>
+      <CardOffer className="homeSection">
       <SectionTitle>Novidades</SectionTitle>
       
       {products.length > 0 ? (

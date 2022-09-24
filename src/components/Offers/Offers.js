@@ -19,7 +19,7 @@ import "../../assets/styles/global.css";
 
 export const Offers = () => {
   return (
-    <CardOffer>
+    <CardOffer className="homeSection">
       <SectionTitle>Ofertas</SectionTitle>
       
       {products.length > 0 ? (
