@@ -1,11 +1,15 @@
-import Home from './pages/Home/index'; 
+import React from 'react';
+import Routes from './routes/index'
+
+
 
 function App() {
   return (
-   <Home />
- 
+    <>
+      < Routes />
+    </>
+
   );
 }
 
 export default App;
- 
