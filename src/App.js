@@ -1,8 +1,13 @@
-import Home from './pages/home/home'; 
+import React from 'react';
+import  Routes from './routes/index'
+
+
 
 function App() {
   return (
-  <Home/>
+   <>
+    < Routes/>
+      </>
     
   );
 }
