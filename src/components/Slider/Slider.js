@@ -11,7 +11,7 @@ const SlidesComponent = ({ slides }) => {
   return (
     <>
       
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+      <Swiper navigation={true} modules={[Navigation]} className="homeSection">
         
       <SwiperSlide><img src={slides[0].url} alt="" /></SwiperSlide>
       <SwiperSlide><img src={slides[1].url} alt=""/></SwiperSlide>
