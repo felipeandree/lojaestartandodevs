@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import "./home.css";
+
 import { Header } from "../../components/Header/Header";
 import { SlidesComponent } from "../../components/Slider/Slider";
 import { slides } from "../../mocks/slides";
@@ -9,7 +9,6 @@ import { Featured } from "../../components/Featured/Featured";
 import { Categories } from "../../components/Categories/Categories"
 import { MenuMobile} from "../../components/MenuMobile/MenuMobile.js"
 import { Footer } from "../../components/Footer"; 
-
 const Home = () => {
   const containerStyles = {
     width: "100%",
@@ -31,7 +30,7 @@ const Home = () => {
       </div>
       <Offers />
       <Featured />
-      <Categories/>
+      <Categories/> 
       <Navbar />
       <Footer />
     </>
