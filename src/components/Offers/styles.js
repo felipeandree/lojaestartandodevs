@@ -66,6 +66,7 @@ const CardRight = styled.div`
 
   > .price {
     color: #81caa8;
+    margin-left: 3rem;
   }
 
   > .description {
