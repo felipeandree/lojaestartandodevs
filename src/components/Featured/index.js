@@ -15,8 +15,6 @@ import {
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "./styles.css";
-import "../../assets/styles/global.css";
 
 export const Featured = () => {
     return (

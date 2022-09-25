@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-
 import { Header } from "../../components/Header";
 import { SlidesComponent } from "../../components/Slider";
 import { slides } from "../../mocks/slides";
