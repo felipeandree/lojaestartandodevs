@@ -57,3 +57,5 @@ export const Offers = () => {
     </CardOffer>
   );
 };
+
+export default Offers

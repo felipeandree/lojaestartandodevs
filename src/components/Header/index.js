@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 
+
 export function Header({ setMenuIsVisible }) {
   return (
     <div className='header'>
@@ -7,7 +8,7 @@ export function Header({ setMenuIsVisible }) {
       <Link to="/"><img className='logo-img' src='/img/logo.png' alt='logo' /></Link>
         <h1 className='home-title'>LOJA</h1>
       </div>
-      <input className='logo-input' placeholder='Pesquisar' type='search' />
+      <input className='logo-input' placeholder='Pesquisar' type='search'  />
 
       <div className='header-icons'>
       <Link to="/carrinho"><span className='material-symbols-outlined iconfill'>

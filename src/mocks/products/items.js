@@ -109,3 +109,5 @@ export const products = [
     type:"featured"
   },
 ];
+
+export default products

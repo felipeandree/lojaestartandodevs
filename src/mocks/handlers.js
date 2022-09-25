@@ -4,6 +4,9 @@ export const handlers = [
   rest.post("/login", null),
   //handles a POST /login request
 
+  rest.get("/carrinho", null),
+  // Handles a GET /carrinhos request
+  
   rest.get("/user", null),
   // Handles a GET /user request
 
