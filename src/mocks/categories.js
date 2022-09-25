@@ -3,42 +3,48 @@ export const categories = [
         id: 1,
         name: "Mousepads",
         image: "/img/category-mousepad.png",
-        alt: "categoria",
+        alt: "Mousepads",
+        url: "/mousepads",
 
     },
     {
         id: 2,
         name: "Chaveiros",
         image: "/img/category-chaveiros.png",
-        alt: "categoria",
+        alt: "Chaveiros",
+        url: "/chaveiros",
 
     },
     {
         id: 3,
         name: "Camisas",
         image: "/img/category-camisas.png",
-        alt: "categoria",
+        alt: "Camisas",
+        url: "/camisas"
 
     },
     {
         id: 4,
         name: "Bonés",
         image: "/img/category-bones.png",
-        alt: "categoria",
+        alt: "Bonés",
+        url: "/bones"
 
     },
     {
         id: 5,
         name: "Canecas",
         image: "/img/category-canecas.png",
-        alt: "categoria",
+        alt: "Canecas",
+        url: "/canecas"
 
     },
     {
         id: 6,
         name: "Almofadas",
         image: "/img/category-almofada.png",
-        alt: "categoria",
+        alt: "Almofads",
+        url: "/almofadas"
     }
 
 ];
