@@ -3,8 +3,9 @@ import { MainCartTitle } from "./styles"
 
 export const MainCart = () => {
     return (
+       
         < MainCartTitle>
-            MAIN LEFT
+            Seu Carrinho 
         </MainCartTitle>
     )
 }

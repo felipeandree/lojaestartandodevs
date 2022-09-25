@@ -4,7 +4,7 @@ import { BasketCartTitle } from "./styles";
 export const BasketCart = () => {
     return (
         <BasketCartTitle>
-            BASKET RIGHT
+            BASKET TOTAL
         </BasketCartTitle>
     )
 }
