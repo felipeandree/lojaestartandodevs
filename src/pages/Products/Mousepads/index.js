@@ -3,19 +3,24 @@ import { Header } from "../../../components/Header";
 import { MenuMobile } from "../../../components/MenuMobile";
 import { products } from "../../../mocks/products/items"
 import { MousepadTitle } from "./styles";
-import { Body } from "./styles";
-import { Card } from "./styles";
-import { CardTitle } from "./styles"; 
-import { CardSection } from "./styles";
-import { CardImage } from "./styles";
-import { CardInformations } from "./styles";
+import {
+  Body,
+  Card,
+  CardTitle,
+  CardSection,
+  CardImage,
+  CardInformations,
+} from "./styles";
 
 export const Mousepads = () => {
 
   const [menuIsVisible, setMenuIsVisible] = useState(false)
   return (
-
+    
     <Body>
+      
+
+      
       <MenuMobile
         menuIsVisible={menuIsVisible}
         setMenuIsVisible={setMenuIsVisible} />
@@ -31,6 +36,7 @@ export const Mousepads = () => {
         {products.map((item) => {
           if (item.category === "Mousepads") {
             return (
+              
               <Card> 
                   <CardImage>
                     <img src={item.image} alt={item.alt} />
@@ -44,13 +50,16 @@ export const Mousepads = () => {
                   </CardTitle>
                 
               </Card>
+              
             );
           }
           return null;
         })}
         </CardSection>
       ) : null}
+      
      </Body>
+     
   )
 
 }

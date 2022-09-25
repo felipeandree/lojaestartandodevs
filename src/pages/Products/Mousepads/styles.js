@@ -1,4 +1,5 @@
 import styled from "styled-components";
+;
 
 export const Body = styled.section`
   background-color: #242424;
@@ -9,7 +10,6 @@ export const MousepadTitle = styled.h2`
   color: #81CAA8;
   padding: 18px 24px 4px;
   display: flex;
-
 `;
 
 export const Card = styled.section `
