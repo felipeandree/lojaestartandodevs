@@ -51,10 +51,11 @@ const CardImg = styled.div`
 `;
 
 const CardRight = styled.div`
-  align-items: flex-start;
+  align-items: stretch;
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin-left: 2rem;
 
   > div {
     text-align: left;
@@ -62,11 +63,11 @@ const CardRight = styled.div`
     font-size: 16px;
     font-family: Open Sans;
     line-height: 20%;
+   
   }
 
   > .price {
-    color: #81caa8;
-    margin-left: 3rem;
+    color: #81caa8;    
   }
 
   > .description {

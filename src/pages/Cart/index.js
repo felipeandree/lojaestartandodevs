@@ -3,6 +3,8 @@ import { Header } from "../../components/Header";
 import { MenuMobile } from "../../components/MenuMobile";
 import { BasketCart } from "../../components/BasketCart";
 import { MainCart } from "../../components/MainCart";
+import CartContainer from "./styles"
+
 
 
 export const Cart = () => {
@@ -16,11 +18,11 @@ export const Cart = () => {
                 menuIsVisible={menuIsVisible}
                 setMenuIsVisible={setMenuIsVisible} />
             <Header setMenuIsVisible={setMenuIsVisible} />
-            <div>
-                
-                    <BasketCart />
-                    <MainCart />
-            </div>
+            <CartContainer>
+
+                <MainCart />
+                <BasketCart />
+            </CartContainer>
 
 
         </>

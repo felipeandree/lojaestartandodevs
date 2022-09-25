@@ -10,9 +10,9 @@ export function Header({ setMenuIsVisible }) {
       <input className='logo-input' placeholder='Pesquisar' type='search' />
 
       <div className='header-icons'>
-        <span className='material-symbols-outlined iconfill'>
+      <Link to="/carrinho"><span className='material-symbols-outlined iconfill'>
           shopping_cart
-        </span>
+        </span></Link>
 
         <span
           className='material-symbols-outlined'
