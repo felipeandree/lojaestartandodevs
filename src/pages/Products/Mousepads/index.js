@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { Header } from "../../../components/Header";
 import { MenuMobile } from "../../../components/MenuMobile";
-import { Wrapper } from "./styles";
-
-
-
-
+import { MugsTitle } from "./styles";
+import { Body } from "./styles";
+import { Card } from "./styles"; 
+import { CardImage } from "./styles";
 
 export const Mousepads = () => {
 
@@ -13,14 +12,24 @@ export const Mousepads = () => {
   const [menuIsVisible, setMenuIsVisible] = useState(false)
   return (
 
-    <>
+    <Body>
       <MenuMobile
         menuIsVisible={menuIsVisible}
         setMenuIsVisible={setMenuIsVisible} />
       <Header setMenuIsVisible={setMenuIsVisible} />
-      <h1>Mousepads</h1>
 
-    </>
+        <MugsTitle> Mousepads </MugsTitle>
+
+        {/* Filtros */}
+
+
+        <Card>
+          <CardImage>
+           
+          </CardImage>
+        </Card>
+    
+     </Body>
   )
 
 }
