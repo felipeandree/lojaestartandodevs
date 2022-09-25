@@ -1,5 +1,3 @@
-import "./styles.css";
-import "material-symbols";
 import { Link, NavLink} from 'react-router-dom'
 
 export function Header({ setMenuIsVisible }) {
