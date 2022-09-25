@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom"
 import Home from "../pages/Home";
-import Mousepads from "../pages/Mousepads";
-import Pillows from "../pages/Pillows";
-import Keychains from "../pages/Keychains";
-import Caps from "../pages/Caps";
-import Mugs from "../pages/Mugs";
-import Shirts from "../pages/Shirts";
+import Mousepads from "../pages/categories/Mousepads";
+import Pillows from "../pages/categories/Pillows";
+import Keychains from "../pages/categories/Keychains";
+import Caps from "../pages/categories/Caps";
+import Mugs from "../pages/categories/Mugs";
+import Shirts from "../pages/categories/Shirts";
 
 
 export const Router = () => {
@@ -17,7 +17,7 @@ export const Router = () => {
       <Route path='/chaveiros' element={<Keychains />} />
       <Route path='/bones' element={<Caps />} />
       <Route path='/canecas' element={<Mugs />} />
-      <Route path='/camisas' element={<Shirts/>}/>
+      <Route path='/camisas' element={<Shirts/>} />
     </Routes>
   );
 };
