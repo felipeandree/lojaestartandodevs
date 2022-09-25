@@ -1,11 +1,7 @@
 import React, { useState } from "react";
-import { Header } from "../../../components/Header/Header";
-import { MenuMobile } from "../../../components/MenuMobile/MenuMobile.js";
+import { Header } from "../../../components/Header";
+import { MenuMobile } from "../../../components/MenuMobile";
 import { Wrapper } from "./styles";
-
-
-
-
 
 export const Pillows = () => {
 

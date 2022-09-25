@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { products } from "../../mocks/products";
+import { products } from "../../mocks/products/items";
 import {
   Card,
   CardBottom,
@@ -15,7 +15,7 @@ import {
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "./Featured.css"
+import "./styles.css";
 import "../../assets/styles/global.css";
 
 export const Featured = () => {

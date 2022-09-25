@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { products } from "../../mocks/products";
+import { products } from "../../mocks/products/items";
 import {
   Card,
   CardBottom,

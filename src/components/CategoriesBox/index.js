@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { categories } from "../../mocks/categories";
+import { categories } from "../../mocks/products/categories";
 import {
   Card,
   CardBottom,
@@ -15,10 +15,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/grid";
-import "./Categories.css"
+import "./styles.css"
 import "../../assets/styles/global.css";
 
-export const Categories = () => {
+export const CategoriesBox = () => {
   return (
     <CardOffer className="homeSection">
       <SectionTitle>Categorias</SectionTitle>

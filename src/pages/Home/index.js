@@ -1,13 +1,13 @@
 import React, {useState} from "react";
 
-import { Header } from "../../components/Header/Header";
-import { SlidesComponent } from "../../components/Slider/Slider";
+import { Header } from "../../components/Header";
+import { SlidesComponent } from "../../components/Slider";
 import { slides } from "../../mocks/slides";
-import { Offers } from "../../components/Offers/Offers";
+import { Offers } from "../../components/Offers";
 import { Navbar } from "../../components/Navbar/index";
-import { Featured } from "../../components/Featured/Featured";
-import { Categories } from "../../components/Categories/Categories"
-import { MenuMobile} from "../../components/MenuMobile/MenuMobile.js"
+import { Featured } from "../../components/Featured";
+import { CategoriesBox } from "../../components/CategoriesBox"
+import { MenuMobile} from "../../components/MenuMobile"
 import { Footer } from "../../components/Footer"; 
 const Home = () => {
   const containerStyles = {
@@ -30,7 +30,7 @@ const Home = () => {
       </div>
       <Offers />
       <Featured />
-      <Categories/> 
+      <CategoriesBox/> 
       <Navbar />
       <Footer />
     </>

@@ -1,4 +1,4 @@
-import "./Header.css";
+import "./styles.css";
 import "material-symbols";
 import { Link, NavLink} from 'react-router-dom'
 
