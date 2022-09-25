@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { Header } from "../../components/Header/Header";
-import { MenuMobile } from "../../components/MenuMobile/MenuMobile.js";
-import { Wrapper } from "./styles";
+import { Header } from "../../components/Header";
+import { MenuMobile } from "../../components/MenuMobile";
+import { BasketCart } from "../../components/BasketCart";
+import { MainCart } from "../../components/MainCart";
 
 
 export const Cart = () => {
@@ -15,7 +16,13 @@ export const Cart = () => {
                 menuIsVisible={menuIsVisible}
                 setMenuIsVisible={setMenuIsVisible} />
             <Header setMenuIsVisible={setMenuIsVisible} />
-            <h1>Bonés</h1>
+            <div>
+                
+                    <BasketCart />
+                    <MainCart />
+            </div>
+
+
         </>
     )
 
