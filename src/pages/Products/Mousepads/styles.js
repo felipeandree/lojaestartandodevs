@@ -5,30 +5,47 @@ export const Body = styled.section`
   width: 100%;
 `;
 
-export const MugsTitle = styled.h2`
+export const MousepadTitle = styled.h2`
   color: #81CAA8;
-  padding: 8px 24px 4px;
+  padding: 18px 24px 4px;
+  display: flex;
+
 `;
 
 export const Card = styled.section `
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: row;
+  gap: 0.8rem;
 `
 
 export const CardSection = styled.div`
   display: flex;
+  justify-content: center;
   flex-direction: row;
+  padding: 1.6rem;
+  gap: 0.8rem;
+  border: 0.1rem solid #c4f5de;
 `;
 
 export const CardImage = styled.div`
   display:flex;
-  flex-direction: row;
+  justify-content: center;
+  flex-direction: collumn;
+  width: 100%;
+  height: auto;
+  gap: 0.8rem;
+  
   
 `; 
 
 export const CardTitle= styled.p`
   color: #ffffff;
   display: flex;
+`
+export const CardInformations = styled.div`
+    display: flex;
+    justify-content: center;
+    
 `
 
