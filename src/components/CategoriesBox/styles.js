@@ -35,6 +35,10 @@ const CardTitle = styled.h2`
   margin-bottom: 5rem;
   text-align: center;
   top: 0;
+  > a:link, a:visited, a:hover {
+    text-decoration: none;
+    color: white;
+  }
 `;
 const CardBottom = styled.div`
   align-items: center;

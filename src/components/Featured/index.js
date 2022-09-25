@@ -1,52 +1,58 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { categories } from "../../mocks/categories";
+import { products } from "../../mocks/products/items";
 import {
   Card,
   CardBottom,
   CardImg,
   CardOffer,
   CardOfferSections,
+  CardRight,
   CardTitle,
   SectionTitle,
 } from "./styles";
+// import { Pagination, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "swiper/css/grid";
-import "./Categories.css"
+import "./styles.css";
 import "../../assets/styles/global.css";
 
-export const Categories = () => {
+export const Featured = () => {
     return (
       <CardOffer className="homeSection">
-      <SectionTitle>Categorias</SectionTitle>
+      <SectionTitle>Novidades</SectionTitle>
       
-      {categories.length > 0 ? (
+      {products.length > 0 ? (
         <CardOfferSections>
           <Swiper
-            slidesPerView={2}
-              pagination={false}
-              allowTouchMove={ false }
-            grid={{
-              rows: 2,
-            }}
-            className='mySwiper'
-            >
+            slidesPerView={1}
+            spaceBetween={5}
+            className='mySwiper'>
             
-            {categories.map((item) => {
+            {products.map((item) => {
+              if (item.type === "featured") {
                 return (
                   <SwiperSlide key={item.id}>
                     <Card>
-                      <CardTitle>{item.name}</CardTitle>
+                      
                       <CardBottom>
                         <CardImg>
                           <img src={item.image} alt={item.alt} />
                         </CardImg>
+                        <CardRight>
+                        <CardTitle>{item.name}</CardTitle>
+                          <p className='price'>
+                            A partir de {item.price.toFixed(2)}
+                          </p>
+                          <p className='description'>{item.description}</p>
+                        </CardRight>
                       </CardBottom>
                     </Card>
                   </SwiperSlide>
                 );
+              }
+              return null;
             })}
 
           </Swiper>
