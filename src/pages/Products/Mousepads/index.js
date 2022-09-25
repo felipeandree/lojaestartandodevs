@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import { Header } from "../../../components/Header";
 import { MenuMobile } from "../../../components/MenuMobile";
+import { products } from "../../../mocks/products/items"
 import { MugsTitle } from "./styles";
 import { Body } from "./styles";
-import { Card } from "./styles"; 
+import { Card } from "./styles";
+import { CardTitle } from "./styles"; 
+import { CardSection } from "./styles";
 import { CardImage } from "./styles";
 
 export const Mousepads = () => {
-
 
   const [menuIsVisible, setMenuIsVisible] = useState(false)
   return (
@@ -22,13 +24,29 @@ export const Mousepads = () => {
 
         {/* Filtros */}
 
+      {products.length > 0 ? (
+        <CardSection>
 
-        <Card>
-          <CardImage>
-           
-          </CardImage>
-        </Card>
-    
+        {products.map((item) => {
+          if (item.category === "Mousepads") {
+            return (
+              <Card> 
+                  <CardImage>
+                    <img src={item.image} alt={item.alt} />
+                  </CardImage>
+                  <CardTitle>
+                    <p>{item.description}</p>
+                    <p>{item.price.toFixed(2)}</p>
+                    <p>{item.infomation}</p>
+                  </CardTitle>
+
+              </Card>
+            );
+          }
+          return null;
+        })}
+        </CardSection>
+      ) : null}
      </Body>
   )
 
