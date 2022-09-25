@@ -45,12 +45,16 @@ const Container = styled.div`
     // transform: scale(0.7);
     // transition: 0.7s;
     color: #ffffff;
+    background-color: #24242400;
     > a {
       color: #ffffff;
       text-decoration: none;
+      background-color: #24242400;
     }
+
     a:visited {
       color: #81caa8;
+      background-color: #24242400;
     }
   }
 

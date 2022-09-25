@@ -8,6 +8,7 @@ import { Featured } from "../../components/Featured";
 import { CategoriesBox } from "../../components/CategoriesBox"
 import { MenuMobile} from "../../components/MenuMobile"
 import { Footer } from "../../components/Footer"; 
+
 const Home = () => {
   const containerStyles = {
     width: "100%",

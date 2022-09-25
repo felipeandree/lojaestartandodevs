@@ -39,7 +39,7 @@ export const Offers = () => {
                         </CardImg>
                         <CardRight>
                           <p className='price'>
-                            A partir de {item.price.toFixed(2)}
+                            a partir de {item.price.toFixed(2)} R$
                           </p>
                           <p className='description'>{item.description}</p>
                         </CardRight>

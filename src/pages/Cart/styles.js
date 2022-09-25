@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
-  display: flex;
+const CartContainer = styled.div`
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+}
 `
+export default CartContainer
