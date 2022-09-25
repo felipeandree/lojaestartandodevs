@@ -1,29 +1,26 @@
 import React, { useState } from "react";
 import { Header } from "../../components/Header";
 import { MenuMobile } from "../../components/MenuMobile";
-import { MainCart } from "../../components/MainCart";
+import MainCart from "../../components/MainCart";
+import products from "../../mocks/products/items"
 import CartContainer from "./styles"
-
-
 
 export const Cart = () => {
 
-
+    const { items } = products;
     const [menuIsVisible, setMenuIsVisible] = useState(false)
     return (
 
         <>
-            
+
             <MenuMobile
                 menuIsVisible={menuIsVisible}
                 setMenuIsVisible={setMenuIsVisible} />
             <Header setMenuIsVisible={setMenuIsVisible} />
             <CartContainer>
-                
-                <MainCart />
+
+                <MainCart items={products} />
             </CartContainer>
-
-
         </>
     )
 
