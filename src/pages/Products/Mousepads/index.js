@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import { Header } from "../../../components/Header";
 import { MenuMobile } from "../../../components/MenuMobile";
 import { products } from "../../../mocks/products/items"
-import { MugsTitle } from "./styles";
+import { MousepadTitle } from "./styles";
 import { Body } from "./styles";
 import { Card } from "./styles";
 import { CardTitle } from "./styles"; 
 import { CardSection } from "./styles";
 import { CardImage } from "./styles";
+import { CardInformations } from "./styles";
 
 export const Mousepads = () => {
 
@@ -20,7 +21,7 @@ export const Mousepads = () => {
         setMenuIsVisible={setMenuIsVisible} />
       <Header setMenuIsVisible={setMenuIsVisible} />
 
-        <MugsTitle> Mousepads </MugsTitle>
+        <MousepadTitle> Mousepads </MousepadTitle>
 
         {/* Filtros */}
 
@@ -35,11 +36,13 @@ export const Mousepads = () => {
                     <img src={item.image} alt={item.alt} />
                   </CardImage>
                   <CardTitle>
-                    <p>{item.description}</p>
-                    <p>{item.price.toFixed(2)}</p>
-                    <p>{item.infomation}</p>
+                    <CardInformations>
+                      <p>{item.description}</p>
+                      <p>{item.price.toFixed(2)}</p>
+                      <p>{item.infomation}</p>
+                    </CardInformations>
                   </CardTitle>
-
+                
               </Card>
             );
           }
