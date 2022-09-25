@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Header } from "../../../components/Header";
 import { MenuMobile } from "../../../components/MenuMobile";
-import { Wrapper } from "./styles";
 
 
 
