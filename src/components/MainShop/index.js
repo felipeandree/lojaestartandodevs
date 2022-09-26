@@ -1,4 +1,5 @@
 import React from "react";
+// eslint-disable-next-line no-unused-vars
 import { Swiper, SwiperSlide } from "swiper/react";
 import { MainProducts } from "./styles"
 import Product from './Products';
