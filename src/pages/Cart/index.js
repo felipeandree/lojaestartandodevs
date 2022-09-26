@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Header } from "../../components/Header";
 import { MenuMobile } from "../../components/MenuMobile";
-import MainCart from "../../components/MainCart";
-import products  from "../../mocks/products/items"
+import MainShop from "../../components/MainShop";
+import products from "../../mocks/products/items"
 import CartContainer from "./styles"
 
 export const Cart = () => {
@@ -20,7 +20,7 @@ export const Cart = () => {
             <Header setMenuIsVisible={setMenuIsVisible} />
             <CartContainer>
 
-                <MainCart items={products} />
+                <MainShop items={products} category={"Chaveiros"}/>
             </CartContainer>
         </>
     )

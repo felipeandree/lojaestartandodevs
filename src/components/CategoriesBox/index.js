@@ -9,6 +9,7 @@ import {
   CardOfferSections,
   CardTitle,
   SectionTitle,
+  CardTop,
 } from "./styles";
 import { Link } from 'react-router-dom'
 import "swiper/css";
@@ -37,8 +38,9 @@ export const CategoriesBox = () => {
               return (
                 <SwiperSlide key={item.id}>
                   <Card>
-
-                    <CardTitle><Link to={item.url}>{item.name}</Link></CardTitle>
+                      <CardTop>
+                      <CardTitle><Link to={item.url}>{item.name}</Link></CardTitle>
+                      </CardTop>
                     <CardBottom>
                       <CardImg>
                       <Link to={item.url}><img src={item.image} alt={item.alt} /></Link>
