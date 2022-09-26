@@ -108,6 +108,42 @@ export const products = [
     alt: "Foto de caneca",
     type:"featured"
   },
+  {
+    id: 10,
+    colors: ["#000000, #FAFAFA"],
+    category: "Camisas",
+    description: "Camisa Back-End Dev Estartando Devs",
+    image: "/img/camisa-01.png",
+    name: "Camisa Kubernetes",
+    price: 49.50,
+    sizes: ["P", "M", "G"],
+    alt: "Foto de caneca",
+    type:"featured"
+  },
+  {
+    id: 11,
+    colors: ["#000000, #FAFAFA"],
+    category: "Camisas",
+    description: "Camiseta Developer Dev Estartando Devs",
+    image: "/img/camisa-02.png",
+    name: "Camiseta Developer",
+    price: 15.99,
+    sizes: ["P", "M", "G"],
+    alt: "Foto de caneca",
+    type:"featured"
+  },
+  {
+    id: 12,
+    colors: ["#000000, #FAFAFA"],
+    category: "Camisas",
+    description: "Camiseta Programmer Estartando Devs",
+    image: "/img/camisa-03.png",
+    name: "Camiseta Programmer",
+    price: 15.99,
+    sizes: ["P", "M", "G"],
+    alt: "Foto de caneca",
+    type:"featured"
+  },
 ];
 
 export default products

@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     background-color: #242424;
-
+    text-decoration: none;
   }
   
   html {
@@ -114,6 +114,7 @@ const GlobalStyle = createGlobalStyle`
   
 .swiper-button-next, .swiper-button-prev {
 color:#81CAA8;
+background-color: #24242400;
 }
   
 .homeSection {
@@ -167,5 +168,6 @@ object-fit: cover;
 }
   
 `
+
 
 export default GlobalStyle
