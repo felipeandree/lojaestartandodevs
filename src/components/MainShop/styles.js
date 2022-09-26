@@ -38,4 +38,11 @@ const HeartPlus = styled.span.attrs(() => ({ className: "material-symbols-outlin
   color: var(--primary-color)
 `;
 
-export { MainProducts, CardBtn , CardTop, CardBottom, Card, AddProductCart, HeartPlus, }
+const StarRating = styled.span.attrs(() => ({ className: "material-symbols-outlined" }))`
+  &:after {
+    content: "star";
+  }
+  color: var(--primary-color)
+`
+
+export { MainProducts, CardBtn , CardTop, CardBottom, Card, AddProductCart, HeartPlus, StarRating }

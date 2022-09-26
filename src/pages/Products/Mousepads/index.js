@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { Header } from "../../../components/Header";
 import { MenuMobile } from "../../../components/MenuMobile";
-<<<<<<< HEAD
 import { products } from "../../../mocks/products/items"
-import { MousepadTitle } from "./styles";
+import { MainTitle } from "../styles";
 import {
   Body,
   Card,
@@ -11,46 +10,32 @@ import {
   CardSection,
   CardImage,
   CardInformations,
-} from "./styles";
-=======
-import { MainTitle  } from "../styles";
-import products from "../../../mocks/products/items";
-import MainShop from "../../../components/MainShop";
+} from "../styles";
+import { HeartPlus } from "../../../components/MainShop/styles"
+import { AddProductCart }  from "../../../components/MainShop/styles";
+import { StarRating } from "../../../components/MainShop/styles"; 
 
->>>>>>> bb1453cc2fb2bec0a7174901664cf3e466d0f5f4
+
 
 export const Mousepads = () => {
 
   const [menuIsVisible, setMenuIsVisible] = useState(false)
   return (
-<<<<<<< HEAD
-    
     <Body>
-      
-
-      
-=======
-
-   <>
->>>>>>> bb1453cc2fb2bec0a7174901664cf3e466d0f5f4
       <MenuMobile
         menuIsVisible={menuIsVisible}
         setMenuIsVisible={setMenuIsVisible} />
       <Header setMenuIsVisible={setMenuIsVisible} />
-      <MainTitle>Mousepads</MainTitle>
-
-<<<<<<< HEAD
-        <MousepadTitle> Mousepads </MousepadTitle>
-
-        {/* Filtros */}
+      
+        <MainTitle> Mousepads </MainTitle>
 
       {products.length > 0 ? (
         <CardSection>
-
+  
         {products.map((item) => {
           if (item.category === "Mousepads") {
             return (
-              
+  
               <Card> 
                   <CardImage>
                     <img src={item.image} alt={item.alt} />
@@ -60,11 +45,12 @@ export const Mousepads = () => {
                       <p>{item.description}</p>
                       <p>{item.price.toFixed(2)}</p>
                       <p>{item.infomation}</p>
+                      <AddProductCart /> 
+                      <HeartPlus />
+                      <StarRating /> <StarRating /> <StarRating /> <StarRating /> <StarRating />
                     </CardInformations>
                   </CardTitle>
-                
               </Card>
-              
             );
           }
           return null;
@@ -73,12 +59,7 @@ export const Mousepads = () => {
       ) : null}
       
      </Body>
-     
-=======
-      <MainShop items={products} category={"Mousepads"} />
-      </>
        
->>>>>>> bb1453cc2fb2bec0a7174901664cf3e466d0f5f4
   )
 
 }
