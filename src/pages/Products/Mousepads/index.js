@@ -6,16 +6,12 @@ import products from "../../../mocks/products/items";
 import MainShop from "../../../components/MainShop";
 
 
-
-
-
 export const Mousepads = () => {
-
 
   const [menuIsVisible, setMenuIsVisible] = useState(false)
   return (
 
-    <>
+   <>
       <MenuMobile
         menuIsVisible={menuIsVisible}
         setMenuIsVisible={setMenuIsVisible} />
@@ -23,8 +19,8 @@ export const Mousepads = () => {
       <MainTitle>Mousepads</MainTitle>
 
       <MainShop items={products} category={"Mousepads"} />
-
-    </>
+      </>
+       
   )
 
 }

@@ -9,7 +9,8 @@ export const products = [
     price: 19.90,
     sizes: ["P", "M", "G"],
     alt: "Foto de mousepad",
-    type:"offers"
+    type:"offers",
+    infomation: "Descrição do produto completinha sem limitações. Blá blá blá blá blá blá... blá blá blá blá mais detalhes e tudo o mais que o usuário quer saber e mais um pouco. A tela vai scrollar para baixo verticalmente, assim o user consegue ver tudo q ta escrito aqui =)"
   },
   {
     id: 2,

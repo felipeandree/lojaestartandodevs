@@ -6,10 +6,6 @@ import products from "../../../mocks/products/items";
 import MainShop from "../../../components/MainShop";
 
 
-
-
-
-
 export const Mugs = () => {
 
 
