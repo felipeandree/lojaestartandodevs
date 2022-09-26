@@ -13,6 +13,7 @@ export const MainTitle = styled.h2`
   color: var(--primary-color);
   margin: 2rem 4rem;
   margin-top: 4rem;
+  text-transform: capitalize;
 `;
 
 export const Card = styled.section `
