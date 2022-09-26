@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Header } from "../../../components/Header";
 import { MenuMobile } from "../../../components/MenuMobile";
-import { Wrapper } from "./styles";
+import { MainTitle  } from "../styles";
+import products from "../../../mocks/products/items";
+import MainShop from "../../../components/MainShop";
 
 
 
@@ -18,7 +20,9 @@ export const Mousepads = () => {
         menuIsVisible={menuIsVisible}
         setMenuIsVisible={setMenuIsVisible} />
       <Header setMenuIsVisible={setMenuIsVisible} />
-      <h1>Mousepads</h1>
+      <MainTitle>Mousepads</MainTitle>
+
+      <MainShop items={products} category={"Mousepads"} />
 
     </>
   )

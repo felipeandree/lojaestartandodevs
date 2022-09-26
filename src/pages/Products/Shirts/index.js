@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import { Header } from "../../../components/Header";
 import { MenuMobile } from "../../../components/MenuMobile";
-import { Wrapper } from "./styles";
-
-
-
+import { MainTitle  } from "../styles";
+import products from "../../../mocks/products/items";
+import MainShop from "../../../components/MainShop";
 
 
 export const Shirts = () => {
 
-
+    const { items } = products;
     const [menuIsVisible, setMenuIsVisible] = useState(false)
     return (
 
@@ -18,7 +17,9 @@ export const Shirts = () => {
                 menuIsVisible={menuIsVisible}
                 setMenuIsVisible={setMenuIsVisible} />
             <Header setMenuIsVisible={setMenuIsVisible} />
-            <h1>Camisas</h1>
+            <MainTitle>Camisas</MainTitle>
+
+            <MainShop items={products} category={"Camisas"} />
         </>
     )
 

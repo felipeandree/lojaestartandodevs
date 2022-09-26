@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Header } from "../../../components/Header";
 import { MenuMobile } from "../../../components/MenuMobile";
-import { Wrapper } from "./styles";
+import { MainTitle  } from "../styles";
+import products from "../../../mocks/products/items";
+import MainShop from "../../../components/MainShop";
 
 export const Pillows = () => {
 
@@ -14,7 +16,9 @@ export const Pillows = () => {
                 menuIsVisible={menuIsVisible}
                 setMenuIsVisible={setMenuIsVisible} />
             <Header setMenuIsVisible={setMenuIsVisible} />
-            <h1>Almofadas</h1>
+            <MainTitle>Almofadas</MainTitle>
+
+            <MainShop items={products} category={"Almofadas"} />
         </>
     )
 

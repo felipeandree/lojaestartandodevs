@@ -12,7 +12,7 @@ const CardOffer = styled.div`
   height: 100%;
 `;
 const CardOfferSections = styled.div`
-  color: "#81CAA8" 
+  color: "#81CAA8";
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -28,14 +28,16 @@ const SectionTitle = styled.h1`
 `;
 const Card = styled.div`
   margin: 1rem;
-  margin-bottom: 5rem;
+  margin-bottom: rem;
+`;
+const CardTop = styled.div`
+  display: flex;
+  justify-content: center;
 `;
 const CardTitle = styled.h2`
-  color: white;
-  display: flex;
-  margin-bottom: 5rem;
-  text-align: center;
+ margin-bottom: 2rem;
   top: 0;
+  
   > a:link, a:visited, a:hover {
     text-decoration: none;
     color: white;
@@ -64,4 +66,5 @@ export {
   CardOfferSections,
   CardTitle,
   SectionTitle,
+  CardTop,
 };
