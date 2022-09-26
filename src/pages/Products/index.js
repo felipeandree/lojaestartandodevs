@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Header } from "../../../components/Header";
-import { MenuMobile } from "../../../components/MenuMobile";
-import { products } from "../../../mocks/products/items"
-import { MainTitle } from "../styles";
+import { Header } from "../../components/Header";
+import { MenuMobile } from "../../components/MenuMobile";
+import { products } from "../../mocks/products/items"
+import { MainTitle } from "./styles";
 import {
   Body,
   Card,
@@ -10,14 +10,16 @@ import {
   CardSection,
   CardImage,
   CardInformations,
-} from "../styles";
-import { HeartPlus } from "../../../components/MainShop/styles"
-import { AddProductCart }  from "../../../components/MainShop/styles";
-import { StarRating } from "../../../components/MainShop/styles"; 
+} from "./styles";
+import { HeartPlus } from "../../components/MainShop/styles"
+import { AddProductCart }  from "../../components/MainShop/styles";
+import { StarRating } from "../../components/MainShop/styles"; 
+import { useParams } from "react-router-dom";
 
 
 
-export const Mousepads = () => {
+export const Products = () => {
+  const { productName } = useParams()
 
   const [menuIsVisible, setMenuIsVisible] = useState(false)
   return (
@@ -27,13 +29,13 @@ export const Mousepads = () => {
         setMenuIsVisible={setMenuIsVisible} />
       <Header setMenuIsVisible={setMenuIsVisible} />
       
-        <MainTitle> Mousepads </MainTitle>
+        <MainTitle> {productName}</MainTitle>
 
       {products.length > 0 ? (
         <CardSection>
   
         {products.map((item) => {
-          if (item.category === "Mousepads") {
+          if (item.category.toUpperCase() === productName.toUpperCase()) { 
             return (
   
               <Card> 
@@ -64,4 +66,4 @@ export const Mousepads = () => {
 
 }
 
-export default Mousepads
+export default Products
