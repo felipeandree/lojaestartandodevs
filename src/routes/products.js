@@ -1,13 +1,12 @@
 import { Routes, Route } from "react-router-dom";
-import Products from "../pages/Products";
+import Shop from "../pages/Shop";
 
 
 
 export const RouterProducts = () => {
     return (
       <Routes>
-        <Route path='/products/:productName' element={< Products />} />
-      
+        <Route path='/produtos/:productName' element={< Shop />} />
       </Routes>
     );
   };

@@ -24,12 +24,14 @@
 - [x] Criar a estrutura inicial do projeto 
 - [x] Header
 - [x] Banner 
-- [ ] React DOM
-- [ ] Mock Service Worker
-- [ ] Categorias de Produtos
-- [ ] Menu
-- [ ] Footer
+- [x] React DOM
+- [x] Mock Service Worker
+- [x] Categorias de Produtos
+- [x] Menu
+- [x] Footer
 - [ ] CRUD
+- [ ] Páginas de Produtos
+- [ ] Formulários de Contato
 
 
 ### :handshake: Members 

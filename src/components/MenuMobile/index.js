@@ -13,12 +13,12 @@ export function MenuMobile({ menuIsVisible, setMenuIsVisible }) {
       <span className='material-symbols-outlined iconfill closeTag' onClick={()=>setMenuIsVisible(false)}>close</span>
       <nav className='nav-mobile'>
         <Link to="/">Início</Link>
-        <Link to="/products/almofadas">Almofadas</Link>
-        <Link to="/products/bones">Bonés</Link>
-        <Link to="/products/chaveiros">Chaveiros</Link>
-        <Link to="/products/camisas">Camisas</Link>
-        <Link to="/products/canecas">Canecas</Link>
-        <Link to="/products/mousepads">Mousepads</Link>
+        <Link to="/produtos/almofadas">Almofadas</Link>
+        <Link to="/produtos/bones">Bonés</Link>
+        <Link to="/produtos/chaveiros">Chaveiros</Link>
+        <Link to="/produtos/camisas">Camisas</Link>
+        <Link to="/produtos/canecas">Canecas</Link>
+        <Link to="/produtos/mousepads">Mousepads</Link>
       </nav>
     </Container>
   );

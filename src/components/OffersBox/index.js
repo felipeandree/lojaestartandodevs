@@ -11,35 +11,33 @@ import {
   CardTitle,
   SectionTitle,
 } from "./styles";
-// import { Pagination, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-export const Featured = () => {
+export const OffersBox = () => {
   return (
     <CardOffer className="homeSection">
-      <SectionTitle>Novidades</SectionTitle>
-
+      <SectionTitle>Ofertas</SectionTitle>
+      
       {products.length > 0 ? (
         <CardOfferSections>
           <Swiper
             slidesPerView={1}
             spaceBetween={5}
             className='mySwiper'>
-
+            
             {products.map((item) => {
-              if (item.type === "featured") {
+              if (item.type === "offers") {
                 return (
                   <SwiperSlide key={item.id}>
                     <Card>
-
+                      <CardTitle>{item.name}</CardTitle>
                       <CardBottom>
                         <CardImg>
                           <img src={item.image} alt={item.alt} />
                         </CardImg>
                         <CardRight>
-                          <CardTitle>{item.name}</CardTitle>
                           <p className='price'>
                             a partir de {item.price.toFixed(2)} R$
                           </p>
@@ -60,3 +58,4 @@ export const Featured = () => {
   );
 };
 
+export default OffersBox
