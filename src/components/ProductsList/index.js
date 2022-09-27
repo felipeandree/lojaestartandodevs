@@ -1,6 +1,7 @@
 import React from 'react';
-import { Card, CardBtn, AddProductCart, HeartPlus, CardLeft, CardImage, CardRating, StarRating, CardRight, Text } from "./styles";
-import { MainProducts } from "../MainShop/styles";
+import {
+  AddProductCart, Card, CardBtn, CardImage, CardLeft, CardRating, CardRight, HeartPlus, Main, StarRating, Text
+} from "./style";
 import { products } from "../../mocks/products/items";
 import { useParams } from "react-router-dom";
 
@@ -13,7 +14,7 @@ export default function ProductsList(props) {
   return (
 
 
-    <MainProducts>
+    <Main>
       {products.map((item) => {
         if (item.category.toUpperCase() === productName.toUpperCase()) {
           return (
@@ -53,7 +54,7 @@ export default function ProductsList(props) {
         return null;
       })}
 
-    </MainProducts>
+    </Main>
 
   );
 }

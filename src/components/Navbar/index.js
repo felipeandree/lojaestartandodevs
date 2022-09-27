@@ -1,4 +1,4 @@
-import { Icons } from "./styles";
+import { Icons } from "./style";
 import "material-symbols";
 
 export const Navbar = () => {

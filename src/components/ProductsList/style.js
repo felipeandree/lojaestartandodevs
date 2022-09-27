@@ -1,5 +1,14 @@
 import styled from "styled-components";
 
+const Main = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+  padding: 1.6rem;
+  gap: 1rem; 
+  align-items: center; 
+`;
+
 const Card = styled.div`
   display: flex;
   flex-direction: row;
@@ -96,4 +105,4 @@ const Text = styled.div`
   }
 `
 
-export { CardSection, CardBtn, CardLeft, CardRight, Card, AddProductCart, HeartPlus, StarRating, CardImage, CardRating, CardInformations, Text }
+export { CardSection, CardBtn, CardLeft, CardRight, Card, AddProductCart, HeartPlus, StarRating, CardImage, CardRating, CardInformations, Text, Main }

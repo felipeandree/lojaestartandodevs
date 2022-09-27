@@ -1,4 +1,4 @@
-import { PrimaryButton } from "./styles";
+import { PrimaryButton } from "./style";
 
 export const Button = ({description}) => {
     return (
