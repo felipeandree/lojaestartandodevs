@@ -4,7 +4,7 @@ export const categories = [
         name: "Mousepads",
         image: "/img/category-mousepad.png",
         alt: "Mousepads",
-        url: "/products/mousepads",
+        url: "/produtos/mousepads",
 
     },
     {
@@ -12,7 +12,7 @@ export const categories = [
         name: "Chaveiros",
         image: "/img/category-chaveiros.png",
         alt: "Chaveiros",
-        url: "/products/chaveiros",
+        url: "/produtos/chaveiros",
 
     },
     {
@@ -20,7 +20,7 @@ export const categories = [
         name: "Camisas",
         image: "/img/category-camisas.png",
         alt: "Camisas",
-        url: "/products/camisas"
+        url: "/produtos/camisas"
 
     },
     {
@@ -28,7 +28,7 @@ export const categories = [
         name: "Bonés",
         image: "/img/category-bones.png",
         alt: "Bonés",
-        url: "/products/bones"
+        url: "/produtos/bones"
 
     },
     {
@@ -36,7 +36,7 @@ export const categories = [
         name: "Canecas",
         image: "/img/category-canecas.png",
         alt: "Canecas",
-        url: "/products/canecas"
+        url: "/produtos/canecas"
 
     },
     {
@@ -44,7 +44,7 @@ export const categories = [
         name: "Almofadas",
         image: "/img/category-almofada.png",
         alt: "Almofads",
-        url: "/products/almofadas"
+        url: "/produtos/almofadas"
     }
 
 ];

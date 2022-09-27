@@ -11,7 +11,7 @@ const CardOffer = styled.div`
   height: 100%;
 `;
 const CardOfferSections = styled.div`
-  color: "#81CAA8" 
+  color: "#81CAA8" ;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
