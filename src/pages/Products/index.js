@@ -10,6 +10,8 @@ import {
   CardSection,
   CardImage,
   CardInformations,
+  CardRating,
+  Text,
 } from "./styles";
 import { HeartPlus } from "../../components/MainShop/styles"
 import { AddProductCart }  from "../../components/MainShop/styles";
@@ -26,43 +28,53 @@ export const Products = () => {
     <Body>
       <MenuMobile
         menuIsVisible={menuIsVisible}
-        setMenuIsVisible={setMenuIsVisible} />
+        setMenuIsVisible={setMenuIsVisible}
+      />
       <Header setMenuIsVisible={setMenuIsVisible} />
-      
-        <MainTitle> {productName}</MainTitle>
+
+      <MainTitle> {productName}</MainTitle>
 
       {products.length > 0 ? (
         <CardSection>
-  
-        {products.map((item) => {
-          if (item.category.toUpperCase() === productName.toUpperCase()) { 
-            return (
-  
-              <Card> 
-                  <CardImage>
+          {products.map((item) => {
+            if (item.category.toUpperCase() === productName.toUpperCase()) {
+              return (
+                <Card>
+                  <CardImage> 
                     <img src={item.image} alt={item.alt} />
+                    <CardRating>
+                        <StarRating />
+                        <StarRating />
+                        <StarRating />
+                        <StarRating />
+                        <StarRating />
+                    </CardRating>
+                    
                   </CardImage>
-                  <CardTitle>
-                    <CardInformations>
+                 
+                  <CardInformations>
+
+                    <Text> 
                       <p>{item.description}</p>
                       <p>{item.price.toFixed(2)}</p>
                       <p>{item.infomation}</p>
-                      <AddProductCart /> 
-                      <HeartPlus />
-                      <StarRating /> <StarRating /> <StarRating /> <StarRating /> <StarRating />
-                    </CardInformations>
-                  </CardTitle>
-              </Card>
-            );
-          }
-          return null;
-        })}
+                    </Text>
+
+                      <CardTitle>
+                        <HeartPlus />
+                        <AddProductCart />
+                      </CardTitle>
+
+                  </CardInformations>
+                </Card>
+              );
+            }
+            return null;
+          })}
         </CardSection>
       ) : null}
-      
-     </Body>
-       
-  )
+    </Body>
+  );
 
 }
 
