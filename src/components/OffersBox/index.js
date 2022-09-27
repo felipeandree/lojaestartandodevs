@@ -10,7 +10,7 @@ import {
   CardRight,
   CardTitle,
   SectionTitle,
-} from "./styles";
+} from "./style";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -19,14 +19,14 @@ export const OffersBox = () => {
   return (
     <CardOffer className="homeSection">
       <SectionTitle>Ofertas</SectionTitle>
-      
+
       {products.length > 0 ? (
         <CardOfferSections>
           <Swiper
             slidesPerView={1}
             spaceBetween={5}
             className='mySwiper'>
-            
+
             {products.map((item) => {
               if (item.type === "offers") {
                 return (

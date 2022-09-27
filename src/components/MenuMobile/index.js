@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { Container } from "./styles";
+import { Container } from "./style";
 import "material-symbols";
 import { useEffect } from "react";
 import { Link, NavLink} from 'react-router-dom'

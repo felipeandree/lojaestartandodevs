@@ -1,4 +1,4 @@
-import { TextFooter } from "./styles"
+import { TextFooter } from "./style"
 
 export const Footer = () => {
     return (

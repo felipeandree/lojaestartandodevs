@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import { Link, NavLink } from 'react-router-dom'
 // eslint-disable-next-line no-unused-vars
-import { ShoppingCart, HamburgerMenu, SearchIcon } from './styles'
+import { ShoppingCart, HamburgerMenu, SearchIcon } from './style'
 
 
 
