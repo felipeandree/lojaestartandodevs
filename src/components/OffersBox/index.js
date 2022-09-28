@@ -18,7 +18,7 @@ import "swiper/css/navigation";
 export const OffersBox = () => {
   return (
     <CardOffer className="homeSection">
-      <SectionTitle>Ofertas</SectionTitle>
+      <SectionTitle><a href="/produtos">Ofertas</a></SectionTitle>
 
       {products.length > 0 ? (
         <CardOfferSections>

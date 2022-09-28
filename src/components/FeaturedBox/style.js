@@ -24,6 +24,10 @@ const SectionTitle = styled.h1`
   display: flex;
   padding: 1rem;
   text-align: start;
+  > a:link, a:visited, a:hover {
+    text-decoration: none;
+    color: white;
+  }
 `;
 const Card = styled.div`
   margin: 1rem;

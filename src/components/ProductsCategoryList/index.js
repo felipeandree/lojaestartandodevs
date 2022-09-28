@@ -3,13 +3,14 @@ import { Header } from "../Header";
 import { MenuMobile } from "../MenuMobile";
 import { Main, MainTitle } from "./style";
 import { products } from "../../mocks/products/items";
-import Product from "../Product"
+import { useParams } from "react-router-dom";
+import Product from "../Product";
 
-export default function ProductsList() {
+export default function ProductsCategoryList() {
 
+  const { productCategory } = useParams()
   const [menuIsVisible, setMenuIsVisible] = useState(false)
   return (
-
     <>
       <MenuMobile
         menuIsVisible={menuIsVisible}
@@ -19,16 +20,17 @@ export default function ProductsList() {
 
       <Main>
 
-        <MainTitle>Loja</MainTitle>
+        <MainTitle>{productCategory}</MainTitle>
 
         {products.map((item) => {
+          if (item.category.toUpperCase() === productCategory.toUpperCase()) {
+            return (
 
-          return (
+              < Product item={item} />
 
-            < Product item={item} />
-
-          );
-
+            );
+          }
+          return null;
         })}
 
       </Main>

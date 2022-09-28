@@ -5,6 +5,7 @@ import Cart from "../pages/Cart";
 
 export const Router = () => {
   return (
+    
     <Routes>
       <Route path='/' element={<Home />} />
       <Route>Contato</Route>
