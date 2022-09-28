@@ -18,5 +18,4 @@ const MainTitle = styled.h2`
   padding: 1.2rem 2.2rem 0.2rem;
   text-transform: capitalize;
 `;
-
-export { Main,MainTitle  }
+export {  Main, MainTitle }

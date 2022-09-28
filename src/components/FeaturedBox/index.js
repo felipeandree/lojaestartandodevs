@@ -19,7 +19,7 @@ import "swiper/css/navigation";
 export const FeaturedBox = () => {
   return (
     <CardOffer className="homeSection">
-      <SectionTitle>Novidades</SectionTitle>
+      <SectionTitle><a href="/produtos">Novidades</a></SectionTitle>
 
       {products.length > 0 ? (
         <CardOfferSections>
