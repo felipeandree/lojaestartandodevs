@@ -27,7 +27,6 @@ const CardRight = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  
 `
 
 const CardBtn = styled.div`
@@ -57,7 +56,7 @@ const HeartPlus = styled.span.attrs(() => ({ className: "material-symbols-outlin
     color: var(--primary-color)
 `;
 
-const StarRating = styled.span.attrs(() => ({ className: "material-symbols-outlined" }))`
+const StarRating = styled.span.attrs(() => ({ className: "material-symbols-outlined" }))` 
     &:after {
       content: "star";
     }
@@ -74,23 +73,31 @@ const CardSection = styled.div`
 `;
 
 const CardImage = styled.div`
-  margin-bottom: 1rem;
+
+  & > img {
+    border-radius: 10px;
+    float: left;
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
 `;
 
 const CardRating = styled.div`
-  display: inline-block;
+  display: inline;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 0.25rem;
-  margin: 0; 
-  padding: 0;
-  
+  gap: 0.5rem;
+  margin: -0.2rem; 
+  white-space: nowrap;
+  overflow: hidden;
 `
 const CardInformations = styled.div`
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: center; */
+  justify-content: center; 
   gap: 0.375rem;
 `
 const Text = styled.div`
@@ -104,5 +111,38 @@ const Text = styled.div`
     justify-content: flex-start; */
   }
 `
+/* 
+export const  MissingProducts = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+  gap: 0.5rem;
+`
+export const MissingMessage = styled.div`
+  text-align: left;
+  vertical-align: top;
+  font-size: 24px;
+  font-family: Open Sans;
+  line-height: 24%;
+  color: #ffffff;
+`
+
+import { MissingMessage } from './style';
+import { MissingProducts } from  './style';
+
+
+
+  return(
+    <MissingProducts>
+      <MissingMessage>
+      Estamos sem mais opções deste produto no momento. Mas temos outras opções como estas abaixo. Que tal dar uma olhadinha?
+      </MissingMessage>
+    </MissingProducts>
+  )
+}
+
+*/ 
 
 export { CardSection, CardBtn, CardLeft, CardRight, Card, AddProductCart, HeartPlus, StarRating, CardImage, CardRating, CardInformations, Text, Main }

@@ -23,18 +23,18 @@ export const products = [
     alt: "Foto de chaveira",
     type:"offers"
   },
-  {
-    id: 3,
-    colors: ["#000000, #FAFAFA"],
-    category: "Canecas",
-    description: "Caneca Front-End Estartando Devs",
-    image: "/img/caneca.png",
-    name: "Caneca Front-End",
-    price: 25.50,
-    sizes: ["P", "M", "G"],
-    alt: "Foto de caneca",
-    type:"offers"
-  },
+  // {
+  //   id: 3,
+  //   colors: ["#000000, #FAFAFA"],
+  //   category: "Canecas",
+  //   description: "Caneca Front-End Estartando Devs",
+  //   image: "/img/caneca.png",
+  //   name: "Caneca Front-End",
+  //   price: 25.50,
+  //   sizes: ["P", "M", "G"],
+  //   alt: "Foto de caneca",
+  //   type:"offers"
+  // },
   {
     id: 4,
     colors: ["#000000, #FAFAFA"],
@@ -51,7 +51,7 @@ export const products = [
     id: 5,
     colors: ["#000000, #FAFAFA"],
     category: "Canecas",
-    description: "Caneca Back-End Dev Estartando Devs",
+    description: "Caneca Front-End Dev Estartando Devs",
     image: "/img/Featured-Caneca-1.png",
     name: "Caneca Back-End",
     price: 20.50,
@@ -143,6 +143,31 @@ export const products = [
     alt: "Foto de caneca",
     type:"featured"
   },
+  {
+    id: 13,
+    colors: ["#000000, #FAFAFA"],
+    category: "Almofadas",
+    description: "Almofada Logo Estartando Devs",
+    image: "/img/category-almofada.png",
+    name: "Almofada Logo Estartando Dev",
+    price: 19.99,
+    sizes: ["Unico"],
+    alt: "Foto de Almofadas",
+    type:"category"
+  },
+  {
+    id: 14,
+    colors: ["#000000, #FAFAFA"],
+    category: "Bones",
+    description: "Bone Estartando Devs",
+    image: "/img/category-bones.png",
+    name: "Boné Estartando Dev",
+    price: 19.99,
+    sizes: ["Unico"],
+    alt: "Foto de Boné",
+    type:"category"
+  },
+  
 ];
 
 export default products
