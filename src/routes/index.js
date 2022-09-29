@@ -3,15 +3,14 @@ import Home from "../pages/Home";
 import Cart from "../pages/Cart";
 
 
-export const Router = () => {
+export const mainRouter = () => {
   return (
-    
     <Routes>
       <Route path='/' element={<Home />} />
-      <Route>Contato</Route>
-      <Route path='/carrinho' element={<Cart/>}/>
+      <Route path='/contato'>Contato</Route>
+      <Route path='/carrinho' element={<Cart />} />
     </Routes>
   );
 };
 
-export default Router;
+export default mainRouter;
