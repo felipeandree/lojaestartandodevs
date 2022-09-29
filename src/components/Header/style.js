@@ -5,7 +5,16 @@ const Logo = styled.img`
 width: 100%;
 
 `
+const HeaderIcons = styled.div`
+display:flex;
+> #menuIcons {
+  margin:0 2rem;
+}
+>#menuIcons:nth-child(1){
+    margin: 0 0 0 2rem;
+}
 
+`
 const ShoppingCart = styled.span.attrs(() => ({ className: "material-symbols-outlined" }))`
   &:after {
     content: "shopping_cart";
@@ -30,4 +39,4 @@ const ArrowBack = styled.span.attrs(() => ({ className: "material-symbols-outlin
   }
 `;
 
-export { ShoppingCart, HamburgerMenu, SearchIcon, Logo, ArrowBack }
+export { ShoppingCart, HamburgerMenu, SearchIcon, Logo, ArrowBack, HeaderIcons }
