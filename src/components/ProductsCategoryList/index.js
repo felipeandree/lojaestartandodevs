@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { Header } from "../Header";
 import { MenuMobile } from "../MenuMobile";
-import { Main, MainTitle } from "./style";
+import { Main, MainTitle, MissingMessage, MissingProducts} from "./style";
 import { products } from "../../mocks/products/items";
 import { useParams } from "react-router-dom";
 import Product from "../Product";
+
 
 export default function ProductsCategoryList() {
 
@@ -34,6 +35,12 @@ export default function ProductsCategoryList() {
         })}
 
       </Main>
+      
+      <MissingProducts>
+          <MissingMessage>
+            Produto em falta
+          </MissingMessage>
+      </MissingProducts>
     </>
 
   );
