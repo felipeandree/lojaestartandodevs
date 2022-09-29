@@ -29,7 +29,7 @@ export default function ProductsCategoryList() {
               < Product item={item} />
 
             );
-          }
+          } 
           return null;
         })}
 

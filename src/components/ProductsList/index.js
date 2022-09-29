@@ -6,7 +6,7 @@ import { products } from "../../mocks/products/items";
 import Product from "../Product"
 
 export default function ProductsList() {
-
+  const { item } = products
   const [menuIsVisible, setMenuIsVisible] = useState(false)
   return (
 
