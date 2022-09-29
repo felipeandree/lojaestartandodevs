@@ -23,17 +23,17 @@ const MainTitle = styled.h2`
 export const  MissingProducts = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
-  padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+  padding: 5rem;
   gap: 0.5rem;
 `
 export const MissingMessage = styled.div`
   text-align: left;
-  vertical-align: top;
+  /* vertical-align: top; */
   font-size: 24px;
   font-family: Open Sans;
-  line-height: 24%;
+  /* line-height: 24%; */
   color: #ffffff;
 `
 export {  Main, MainTitle }

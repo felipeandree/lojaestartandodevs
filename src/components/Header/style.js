@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
-// const ShoppingCart = (props) => (
-//     <span className={`material-symbols-outlined iconfill ${props.className}`}> shopping_cart</span>);
+const Logo = styled.img`
 
+width: 100%;
+
+`
 
 const ShoppingCart = styled.span.attrs(() => ({ className: "material-symbols-outlined" }))`
   &:after {
@@ -22,4 +24,10 @@ const SearchIcon = styled.span.attrs(() => ({ className: "material-symbols-outli
 }
 `;
 
-export { ShoppingCart, HamburgerMenu, SearchIcon }
+const ArrowBack = styled.span.attrs(() => ({ className: "material-symbols-outlined" }))`
+  &:after {
+    content: "arrow_back";
+  }
+`;
+
+export { ShoppingCart, HamburgerMenu, SearchIcon, Logo, ArrowBack }
