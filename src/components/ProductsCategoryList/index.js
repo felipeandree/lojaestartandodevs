@@ -28,14 +28,18 @@ export default function ProductsCategoryList() {
     )
   })
 
-  let upsellProducts = upsellProductsRaw.filter((name) => !onlyAvailable.includes(name))
+  
+  let current = { onlyAvailable }
+  console.log(current.onlyAvailable[0])
+
+  let upsellProducts = upsellProductsRaw.filter((item) => !onlyAvailable.includes(item))
 
   function warningMessage() {
     if (onlyAvailable.length < 2) {
       return (
         <><MissingProducts>
           <MissingMessage>
-            Estamos sem mais opções no momento. Mas temos outras opções como estas abaixo. {"\n"}Que tal dar uma olhadinha?
+            No momento não temos mais opçoes deste tipo de produto. Mas temos outras opções. Que tal dar uma olhadinha aqui em baixo?
           </MissingMessage>
         </MissingProducts>
           {upsellProducts}

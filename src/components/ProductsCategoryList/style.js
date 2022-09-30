@@ -20,20 +20,22 @@ const MainTitle = styled.h2`
   text-transform: capitalize;
 `;
 
-export const  MissingProducts = styled.div`
+const  MissingProducts = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  padding: 5rem;
-  gap: 0.5rem;
+  width: 30rem;
+  margin : 2rem 0;
+  /* padding: 5rem;
+  gap: 0.5rem; */
 `
-export const MissingMessage = styled.div`
-  text-align: left;
+const MissingMessage = styled.div`
+  text-align: center;
   /* vertical-align: top; */
-  font-size: 24px;
-  font-family: Open Sans;
+  font-size: 1.8rem;
+  /* font-family: Open Sans; */
   /* line-height: 24%; */
-  color: #ffffff;
+  color: var(--alert-color);
 `
-export {  Main, MainTitle }
+export {  Main, MainTitle, MissingProducts, MissingMessage }
