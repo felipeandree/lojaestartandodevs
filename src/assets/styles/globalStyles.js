@@ -109,7 +109,8 @@ const GlobalStyle = createGlobalStyle`
 }
 
 .header-icons, .header-icons * {
-    margin: 0.5rem 1rem 1rem;
+    margin: 1.2rem 0rem ;
+    padding: 0.6rem;
 } 
   
 .swiper-button-next, .swiper-button-prev {
