@@ -20,7 +20,7 @@ const MainTitle = styled.h2`
   text-transform: capitalize;
 `;
 
-const  MissingProducts = styled.div`
+export const  MissingProducts = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -30,7 +30,7 @@ const  MissingProducts = styled.div`
   /* padding: 5rem;
   gap: 0.5rem; */
 `
-const MissingMessage = styled.div`
+export const MissingMessage = styled.div`
   text-align: center;
   /* vertical-align: top; */
   font-size: 1.8rem;
@@ -38,4 +38,4 @@ const MissingMessage = styled.div`
   /* line-height: 24%; */
   color: var(--alert-color);
 `
-export {  Main, MainTitle, MissingProducts, MissingMessage }
+export {  Main, MainTitle }
