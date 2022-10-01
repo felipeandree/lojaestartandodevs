@@ -25,15 +25,17 @@ export const  MissingProducts = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  padding: 5rem;
-  gap: 0.5rem;
+  width: 30rem;
+  margin : 2rem 0;
+  /* padding: 5rem;
+  gap: 0.5rem; */
 `
 export const MissingMessage = styled.div`
-  text-align: left;
+  text-align: center;
   /* vertical-align: top; */
-  font-size: 24px;
-  font-family: Open Sans;
+  font-size: 1.8rem;
+  /* font-family: Open Sans; */
   /* line-height: 24%; */
-  color: #ffffff;
+  color: var(--alert-color);
 `
 export {  Main, MainTitle }

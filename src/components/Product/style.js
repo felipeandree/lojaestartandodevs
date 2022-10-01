@@ -17,6 +17,7 @@ const Card = styled.div`
   padding: 1rem;
   border-bottom: 0.0625rem solid #c4f5de;
   color: #ffffff;
+  width: 30rem;
 `
 
 const CardLeft = styled.div`
@@ -27,7 +28,7 @@ const CardRight = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 20rem;
+  /* width: 20rem; */
 `
 
 const CardBtn = styled.div`

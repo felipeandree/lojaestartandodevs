@@ -1,31 +1,43 @@
-// eslint-disable-next-line no-unused-vars
-import { Link, useLocation, NavLink } from 'react-router-dom'
-// eslint-disable-next-line no-unused-vars
-import { ShoppingCart, HamburgerMenu, SearchIcon, Logo, ArrowBack, HeaderIcons } from './style';
+/* eslint-disable no-unused-vars */
+import React, { useState } from "react";
+import { Link, useLocation, NavLink } from "react-router-dom";
+import { MenuMobile } from "../../components/MenuMobile";
+import {
+  ShoppingCart,
+  HamburgerMenu,
+  SearchIcon,
+  Logo,
+  ArrowBack,
+  HeaderIcons,
+} from "./style";
 
-export function Header({ setMenuIsVisible, props }) {
-
-
+export function Header() {
   // const {pathname} = useLocation();
-  /**/
   // let logoHeader = {pathname} === '/' ? <Logo src='/img/logo.png' href="/"alt='logo' /> : <Link to="/"><ArrowBack /> </Link>
-
-
+  const [openMenu, setOpenMenu] = useState(false);
   return (
-    <div className='header'>
-      <div className='menu-logo'>
-
+    <div className="header">
+      <MenuMobile menuIsVisible={openMenu} setMenuIsVisible={setOpenMenu} />
+      <div className="menu-logo">
         {/* {logoHeader} */}
 
         {/* {props.showBack && <ArrowBack />} */}
-        <NavLink to="/"><Logo src='/img/logo.png' alt='logo' /></NavLink>
-        <NavLink to="/"><h1 className='home-title'>LOJA</h1></NavLink>
+        <NavLink to="/">
+          <Logo src="/img/logo.png" alt="logo" />
+        </NavLink>
+        <NavLink to="/">
+          <h1 className="home-title">LOJA</h1>
+        </NavLink>
       </div>
-      <input className='logo-input' placeholder='Pesquisar' type='search' />
+      <input className="logo-input" placeholder="Pesquisar" type="search" />
 
       <HeaderIcons>
-        <NavLink to="/carrinho" id="menuIcons"><ShoppingCart /></NavLink>
-        <NavLink onClick={() => setMenuIsVisible(true)} id="menuIcons"> <HamburgerMenu /></NavLink>
+        <NavLink to="/carrinho" id="menuIcons">
+          <ShoppingCart />
+        </NavLink>
+        <NavLink onClick={() => setOpenMenu(true)} id="menuIcons">
+          <HamburgerMenu />
+        </NavLink>
       </HeaderIcons>
     </div>
   );
