@@ -10,7 +10,7 @@ import {
   CardTitle,
   CardTop,
   SectionTitle,
-} from "./style";
+} from "./styles";
 import { Link } from 'react-router-dom'
 import "swiper/css";
 import "swiper/css/pagination";

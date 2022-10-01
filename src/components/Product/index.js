@@ -1,9 +1,8 @@
 import React from 'react';
-// import { useParams } from "react-router-dom";
 
 import {
   AddProductCart, Card, CardBtn, CardImage, CardLeft, CardRating, CardRight, HeartPlus, StarRating, Text
-} from "./style";
+} from "./styles";
 
 
 export default function Product(props) {

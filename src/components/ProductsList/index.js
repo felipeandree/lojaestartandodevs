@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
-import { Main, MainTitle } from "./style";
+import { Main, MainTitle } from "./styles";
 import { products } from "../../mocks/products/items";
 import Product from "../Product"
 

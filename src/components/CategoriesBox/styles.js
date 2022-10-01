@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-const CardOffer = styled.div`
+export const CardOffer = styled.div`
   display: flex;
   flex-direction: column;
   // gap: 8px;
@@ -11,7 +11,7 @@ const CardOffer = styled.div`
   margin: 0 auto;
   height: 100%;
 `;
-const CardOfferSections = styled.div`
+export const CardOfferSections = styled.div`
   color: "#81CAA8";
   display: flex;
   flex-wrap: wrap;
@@ -20,21 +20,21 @@ const CardOfferSections = styled.div`
   flex-direction: row;
   `;
 
-const SectionTitle = styled.h1`
+export const SectionTitle = styled.h1`
   color: #ffff;
   display: flex;
   padding: 1rem;
   text-align: center;
 `;
-const Card = styled.div`
+export const Card = styled.div`
   margin: 1rem;
   margin-bottom: rem;
 `;
-const CardTop = styled.div`
+export const CardTop = styled.div`
   display: flex;
   justify-content: center;
 `;
-const CardTitle = styled.h2`
+export const CardTitle = styled.h2`
  margin-bottom: 2rem;
   top: 0;
   
@@ -43,13 +43,13 @@ const CardTitle = styled.h2`
     color: white;
   }
 `;
-const CardBottom = styled.div`
+export const CardBottom = styled.div`
   align-items: center;
   display: flex;
   gap: 8px;
   justify-content: flex-start;
 `;
-const CardImg = styled.div`
+export const CardImg = styled.div`
   height: 100%;
   width: 15rem;
 
@@ -57,14 +57,3 @@ const CardImg = styled.div`
     border-radius: 10%;
   }
 `;
-
-export {
-  Card,
-  CardBottom,
-  CardImg,
-  CardOffer,
-  CardOfferSections,
-  CardTitle,
-  SectionTitle,
-  CardTop,
-};

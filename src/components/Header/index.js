@@ -9,7 +9,7 @@ import {
   Logo,
   ArrowBack,
   HeaderIcons,
-} from "./style";
+} from "./styles";
 
 export function Header() {
   // const {pathname} = useLocation();
