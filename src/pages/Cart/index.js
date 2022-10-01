@@ -1,17 +1,19 @@
 import products from "../../mocks/products/items";
-import CartContainer from "./style";
+import {MainTitle, CartContainer, Main } from "./style";
+
 
 export const Cart = () => {
-    
+
     // eslint-disable-next-line
     const { items } = products;
-    
+
     return (
 
         <>
+            <MainTitle>Cart</MainTitle>
+            <Main></Main>
             <CartContainer>
 
-                <h1> Cart </h1>
             </CartContainer>
         </>
     )

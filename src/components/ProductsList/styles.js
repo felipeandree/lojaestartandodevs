@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Main = styled.div`
+export const Main = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column; 
@@ -9,7 +9,7 @@ const Main = styled.div`
   align-items: center; 
 `;
 
-const MainTitle = styled.h2`
+export const MainTitle = styled.h2`
   color: #81CAA8;
   color: var(--primary-color);
   display: flex;
@@ -18,5 +18,3 @@ const MainTitle = styled.h2`
   padding: 1.2rem 2.2rem 0.2rem;
   text-transform: capitalize;
 `;
-
-export { Main,MainTitle  }

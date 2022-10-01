@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Main = styled.div`
+export const Main = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column; 
@@ -9,7 +9,7 @@ const Main = styled.div`
   align-items: center; 
 `;
 
-const Card = styled.div`
+export const Card = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -20,18 +20,18 @@ const Card = styled.div`
   width: 30rem;
 `
 
-const CardLeft = styled.div`
+export const CardLeft = styled.div`
   margin-right: 1rem;
 `
 
-const CardRight = styled.div`
+export const CardRight = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   /* width: 20rem; */
 `
 
-const CardBtn = styled.div`
+export const CardBtn = styled.div`
   display:flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -43,14 +43,14 @@ const CardBtn = styled.div`
   }
 `
 
-const AddProductCart = styled.span.attrs(() => ({ className: "material-symbols-outlined" }))`
+export const AddProductCart = styled.span.attrs(() => ({ className: "material-symbols-outlined" }))`
     &:after {
       content: "add_shopping_cart";
     }
     color: var(--primary-color)
 `;
 
-const HeartPlus = styled.span.attrs(() => ({ className: "material-symbols-outlined" }))`
+export const HeartPlus = styled.span.attrs(() => ({ className: "material-symbols-outlined" }))`
   flex-grow:0.5;
     &:after {
       content: "heart_plus";
@@ -58,14 +58,14 @@ const HeartPlus = styled.span.attrs(() => ({ className: "material-symbols-outlin
     color: var(--primary-color)
 `;
 
-const StarRating = styled.span.attrs(() => ({ className: "material-symbols-outlined" }))` 
+export const StarRating = styled.span.attrs(() => ({ className: "material-symbols-outlined" }))` 
     &:after {
       content: "star";
     }
     color: var(--primary-color)
 `
 
-const CardSection = styled.div`
+export const CardSection = styled.div`
   /* display: flex;
   justify-content: center;
   flex-direction: column;  */
@@ -74,7 +74,7 @@ const CardSection = styled.div`
   align-items: center; 
 `;
 
-const CardImage = styled.div`
+export const CardImage = styled.div`
 
   & > img {
     border-radius: 10px;
@@ -86,7 +86,7 @@ const CardImage = styled.div`
   }
 `;
 
-const CardRating = styled.div`
+export const CardRating = styled.div`
   display: inline;
   flex-direction: row;
   justify-content: center;
@@ -96,13 +96,13 @@ const CardRating = styled.div`
   white-space: nowrap;
   overflow: hidden;
 `
-const CardInformations = styled.div`
+export const CardInformations = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center; 
   gap: 0.375rem;
 `
-const Text = styled.div`
+export const Text = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.375rem;
@@ -114,4 +114,3 @@ const Text = styled.div`
   }
 `
 
-export { CardSection, CardBtn, CardLeft, CardRight, Card, AddProductCart, HeartPlus, StarRating, CardImage, CardRating, CardInformations, Text, Main }

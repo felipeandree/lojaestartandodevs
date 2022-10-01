@@ -10,7 +10,7 @@ import {
   CardRight,
   CardTitle,
   SectionTitle,
-} from "./style";
+} from "./styles";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";

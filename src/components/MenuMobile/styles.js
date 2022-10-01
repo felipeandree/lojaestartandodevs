@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-const Container = styled.div`
+export const Container = styled.div`
   position: absolute;
   backdrop-filter: blur(3px);
   width: 100%;
@@ -72,5 +72,3 @@ const Container = styled.div`
       }
     `}
 `;
-
-export { Container };

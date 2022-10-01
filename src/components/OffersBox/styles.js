@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const CardOffer = styled.div`
+export const CardOffer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -10,7 +10,7 @@ const CardOffer = styled.div`
   margin: 0 auto;
   height: 100%;
 `;
-const CardOfferSections = styled.div`
+export const CardOfferSections = styled.div`
   color: "#81CAA8";
   display: flex;
   flex-wrap: wrap;
@@ -19,7 +19,7 @@ const CardOfferSections = styled.div`
   flex-direction: row;
   `;
 
-const SectionTitle = styled.h1`
+export const SectionTitle = styled.h1`
   color: #ffff;
   display: flex;
   padding: 1rem;
@@ -31,23 +31,23 @@ const SectionTitle = styled.h1`
   }
 
 `;
-const Card = styled.div`
+export const Card = styled.div`
   margin: 1rem;
   margin-bottom: 5rem;
 `;
-const CardTitle = styled.h2`
+export const CardTitle = styled.h2`
   color: white;
   display: flex;
   margin-bottom: 5rem;
   top: 0;
 `;
-const CardBottom = styled.div`
+export const CardBottom = styled.div`
   align-items: center;
   display: flex;
   gap: 8px;
   justify-content: flex-start;
 `;
-const CardImg = styled.div`
+export const CardImg = styled.div`
   height: 100%;
   width: 18rem;
 
@@ -56,7 +56,7 @@ const CardImg = styled.div`
   }
 `;
 
-const CardRight = styled.div`
+export const CardRight = styled.div`
   align-items: stretch;
   display: flex;
   flex-direction: column;
@@ -80,13 +80,3 @@ const CardRight = styled.div`
     color: #fff;
   }
 `;
-export {
-  Card,
-  CardBottom,
-  CardImg,
-  CardOffer,
-  CardOfferSections,
-  CardRight,
-  CardTitle,
-  SectionTitle,
-};
