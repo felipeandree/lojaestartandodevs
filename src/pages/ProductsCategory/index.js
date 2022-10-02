@@ -17,7 +17,7 @@ export default function ProductsCategoryList() {
         <ProductCategoryList products={products} category={productCategory} />
         <WarningMessage
           message=" No momento não temos mais opções deste tipo de produto. Mas temos
-           outras opções. Que tal dar uma olhadinha aqui em baixo?"
+           outras, que tal dar uma olhadinha aqui em baixo.."
         >
           <UpSellCategoryList
             products={products}
