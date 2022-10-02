@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import {
   AddProductCart, Card, CardBtn, CardImage, CardLeft, CardRating, CardRight, HeartPlus, StarRating, Text
@@ -6,15 +7,15 @@ import {
 
 
 export default function Product(props) {
-  const { products, onAdd } = props;
+  const { product, onAdd } = props;
   // const { productCategory, productName, productId } = useParams()
 
   return (
 
-    <Card key={products.id}>
+    <Card key={product.id}>
       <CardLeft >
         <CardImage>
-          <img src={products.image} alt={products.alt} />
+          <img src={product.image} alt={product.alt} />
         </CardImage>
         <CardRating>
           <StarRating />
@@ -28,14 +29,14 @@ export default function Product(props) {
       <CardRight>
 
         <Text>
-          <p>{products.name}</p>
-          <p>{products.price.toFixed(2)} R$</p>
-          <p>{products.description}</p>
+          <p>{product.name}</p>
+          <p>{product.price.toFixed(2)} R$</p>
+          <p>{product.description}</p>
         </Text>
 
         <CardBtn>
           <HeartPlus />
-          <AddProductCart onClick={() => onAdd(products)}/>
+          <Link onClick={() => onAdd(product)}><AddProductCart/></Link>
         </CardBtn>
 
       </CardRight>

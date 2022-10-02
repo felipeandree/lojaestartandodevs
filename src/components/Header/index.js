@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+/* eslint-disable no-unused-vars*/
 import React, { useState } from "react";
 import { Link, useLocation, NavLink } from "react-router-dom";
 import { MenuMobile } from "../../components/MenuMobile";
@@ -11,7 +11,7 @@ import {
   HeaderIcons,
 } from "./styles";
 
-export function Header() {
+export function Header(props) {
   // const {pathname} = useLocation();
   // let logoHeader = {pathname} === '/' ? <Logo src='/img/logo.png' href="/"alt='logo' /> : <Link to="/"><ArrowBack /> </Link>
   const [openMenu, setOpenMenu] = useState(false);
@@ -33,8 +33,14 @@ export function Header() {
 
       <HeaderIcons>
         <NavLink to="/carrinho" id="menuIcons">
-          <ShoppingCart />
+          <ShoppingCart />{' '}
+          {props.countCartItems ? (
+            <button className="badge">{props.countCartItems}</button>
+          ) : (
+           ''
+          )}
         </NavLink>
+        
         <NavLink onClick={() => setOpenMenu(true)} id="menuIcons">
           <HamburgerMenu />
         </NavLink>

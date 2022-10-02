@@ -5,7 +5,7 @@ import Product from "../Product";
 
 export default function ProductsList(props) {
 
-const { products } = props
+const { products, onAdd } = props
  
   return (
 
@@ -15,11 +15,11 @@ const { products } = props
 
         <MainTitle>Loja</MainTitle>
 
-        {products.map((products) => {
+        {products.map((product) => {
 
           return (
 
-            < Product key={products.id} products={products} />
+            < Product key={product.id} product={product} onAdd={onAdd}/>
 
           );
 
