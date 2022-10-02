@@ -1,10 +1,12 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 import { Main, MainTitle } from "./styles";
-import { products } from "../../mocks/products/items";
-import Product from "../Product"
+import Product from "../Product";
 
-export default function ProductsList() {
+export default function ProductsList(props) {
+
+const { products } = props
+ 
   return (
 
     <>
@@ -13,11 +15,11 @@ export default function ProductsList() {
 
         <MainTitle>Loja</MainTitle>
 
-        {products.map((item) => {
+        {products.map((products) => {
 
           return (
 
-            < Product item={item} />
+            < Product key={products.id} products={products} />
 
           );
 

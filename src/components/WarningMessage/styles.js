@@ -16,7 +16,7 @@ export const MissingMessage = styled.div`
   font-size: 1.8rem;
   /* font-family: Open Sans; */
   /* line-height: 24%; */
-  color: var(--alert-color);
+  color: var(--swiper-theme-color);
 `;
 export const MissingContainer = styled.div`
   display:flex;

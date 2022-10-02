@@ -1,4 +1,5 @@
 import React from 'react';
+import { CartBox } from './styles';
 
 export default function Basket(props) {
   const { cartItems, onAdd, onRemove } = props;
@@ -7,7 +8,7 @@ export default function Basket(props) {
   const shippingPrice = itemsPrice > 2000 ? 0 : 20;
   const totalPrice = itemsPrice + taxPrice + shippingPrice;
   return (
-    <div>
+    <CartBox> 
       <h2>Cart Items</h2>
       <div>
         {cartItems.length === 0 && <div>Cart is empty</div>}
@@ -64,6 +65,6 @@ export default function Basket(props) {
           </>
         )}
       </div>
-    </div>
+    </CartBox>
   );
 }

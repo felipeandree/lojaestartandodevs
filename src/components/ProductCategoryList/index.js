@@ -6,6 +6,6 @@ const ProductCategoryList = ({ products, category }) => {
     .filter(
       (product) => product.category.toUpperCase() === category.toUpperCase()
     )
-    .map((product) => <Product item={product} key={product.id} />);
+    .map((product) => <Product product={product} key={product.id} />);
 };
 export default ProductCategoryList;

@@ -1,11 +1,12 @@
 import { Routes, Route } from "react-router-dom";
+import { ShippingForm } from "../pages/Forms";
 import Home from "../pages/Home";
 import Cart from "../pages/Cart";
 import Shop from "../pages/Shop";
-import { ShippingForm } from "../pages/Forms";
 import ProductsCategory from "../pages/ProductsCategory";
 import Layout from "../components/Layout";
-export const mainRouter = () => {
+
+const mainRouter = () => {
   return (
     <Layout>
       <Routes>
@@ -13,9 +14,7 @@ export const mainRouter = () => {
         <Route path="/contato">Contato</Route>
         <Route path="/carrinho" element={<Cart />} />
         <Route path="/produtos" element={<Shop />} />
-        <Route
-          exact
-          path="/produtos/:productCategory"
+        <Route path="/produtos/:productCategory"
           element={<ProductsCategory />}
         />
         <Route path="/formulario" element={<ShippingForm />} />
