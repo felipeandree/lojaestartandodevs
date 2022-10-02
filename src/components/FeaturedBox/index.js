@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { products } from "../../mocks/products/items";
+import data from "../../mocks/products/items";
 import {
   Card,
   CardBottom,
@@ -16,6 +16,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 export const FeaturedBox = () => {
+  const { products } = data;
   return (
     <CardOffer className="homeSection">
       <SectionTitle><a href="/produtos">Novidades</a></SectionTitle>

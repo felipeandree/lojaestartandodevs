@@ -1,13 +1,14 @@
 import React from "react";
 
 import { Main, MainTitle } from "./style";
-import { products } from "../../mocks/products/items";
+import data from "../../mocks/products/items";
 import { useParams } from "react-router-dom";
 import WarningMessage from "../../components/WarningMessage";
 import ProductCategoryList from "../../components/ProductCategoryList";
 import UpSellCategoryList from "../../components/UpSellCategoryList";
 
 export default function ProductsCategoryList() {
+  const { products } = data;
   const { productCategory } = useParams();
   return (
     <>

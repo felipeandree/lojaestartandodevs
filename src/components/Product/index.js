@@ -6,15 +6,15 @@ import {
 
 
 export default function Product(props) {
-  const { item, onAdd } = props;
+  const { products, onAdd } = props;
   // const { productCategory, productName, productId } = useParams()
 
   return (
 
-    <Card key={item.id}>
+    <Card key={products.id}>
       <CardLeft >
         <CardImage>
-          <img src={item.image} alt={item.alt} />
+          <img src={products.image} alt={products.alt} />
         </CardImage>
         <CardRating>
           <StarRating />
@@ -28,14 +28,14 @@ export default function Product(props) {
       <CardRight>
 
         <Text>
-          <p>{item.name}</p>
-          <p>{item.price.toFixed(2)} R$</p>
-          <p>{item.description}</p>
+          <p>{products.name}</p>
+          <p>{products.price.toFixed(2)} R$</p>
+          <p>{products.description}</p>
         </Text>
 
         <CardBtn>
           <HeartPlus />
-          <AddProductCart onClick={() => onAdd(item)} />
+          <AddProductCart onClick={() => onAdd(products)}/>
         </CardBtn>
 
       </CardRight>
