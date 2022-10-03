@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars*/
 import React, { useState } from "react";
 import { Link, useLocation, NavLink } from "react-router-dom";
-import { MenuMobile } from "../../components/MenuMobile";
+import { MenuMobile } from "../MenuMobile";
 import {
   ShoppingCart,
   HamburgerMenu,
