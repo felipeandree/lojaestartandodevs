@@ -21,5 +21,3 @@ export const TextInformation = styled.div`
   padding: 0 1rem;
 `
 
-
-
