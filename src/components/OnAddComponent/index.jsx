@@ -2,6 +2,7 @@ import { useState } from "react";
 import Basket from "components/Basket";
 
 const OnAddComponent = (props) => {
+  // eslint-disable-next-line no-unused-vars
 const { products } = props
   const [cartItems, setCartItems] = useState([]);
 
