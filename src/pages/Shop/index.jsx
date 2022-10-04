@@ -1,4 +1,6 @@
+ // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
+ // eslint-disable-next-line no-unused-vars
 import Basket from "components/Basket";
 import ProductsList from "components/ProductsList";
 import data from "../../mocks/products/items";

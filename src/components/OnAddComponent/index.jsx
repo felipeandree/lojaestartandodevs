@@ -2,6 +2,7 @@ import { useState } from "react";
 import Basket from "components/Basket";
 
 const OnAddComponent = (props) => {
+
   const { products } = props
   
   const { onAdd, onRemove, cartItems } = props
