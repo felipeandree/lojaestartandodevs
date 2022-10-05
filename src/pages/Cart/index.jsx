@@ -1,13 +1,14 @@
 
 import Basket from "components/Basket";
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { MainTitle, CartContainer, Main } from "./style";
-import ProductsList from "../../components/ProductsList";
-import OnAddComponent from "components/OnAddComponent";
+import { CartContext } from "../../contexts/cart";
 
 
-export const Cart = (props) => {
-  const { products, onAdd, onRemove, cartItems } = props
+export const Cart = () => {
+
+  const {cartItems, onAdd, onRemove} = useContext(CartContext);
+
 
   return (
 
@@ -15,17 +16,8 @@ export const Cart = (props) => {
       <MainTitle>Cart</MainTitle>
       <Main >
         <CartContainer >
-{/* 
-          <Basket cartItems={cartItems}
-            onAdd={onAdd} onRemove={onRemove}>
-          </Basket> */}
 
-<OnAddComponent
-        cartItems={cartItems}
-        onAdd={onAdd}
-        onRemove={onRemove}
-      ></OnAddComponent>
-
+        <Basket cartItems={cartItems} onAdd={onAdd} onRemove={onRemove}></Basket>
           
         </CartContainer>
       </Main>

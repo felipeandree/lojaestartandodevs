@@ -1,11 +1,14 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import { Main, MainTitle } from "./styles";
 import Product from "../Product";
+import { CartContext } from "../../contexts/cart";
+
 
 export default function ProductsList(props) {
 
-const { products, onAdd } = props
+  const { products } = props
+  const { cartItems, onAdd, onRemove } = useContext(CartContext);
  
   return (
 
@@ -19,7 +22,7 @@ const { products, onAdd } = props
 
           return (
 
-            < Product key={product.id} product={product} onAdd={onAdd}/>
+            < Product key={product.id} product={product} onAdd={onAdd} cartItems={cartItems}/>
 
           );
 

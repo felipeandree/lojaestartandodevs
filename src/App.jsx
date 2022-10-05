@@ -3,12 +3,15 @@ import Routes from './routes/index'
 import GlobalStyle from './assets/styles/globalStyles';
 import { ScrollToTop } from './components/ScrollToTop';
 import 'material-symbols/outlined.css';
+import { CartContextProvider } from 'contexts/cart';
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      < Routes />
+        <CartContextProvider >
+        < Routes />
+        </CartContextProvider >
       <ScrollToTop />
     </>
 
