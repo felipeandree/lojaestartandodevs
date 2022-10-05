@@ -1,4 +1,4 @@
-
+ // eslint-disable-next-line no-unused-vars
 import Basket from "components/Basket";
 import { useState, useContext } from 'react';
 import { MainTitle, CartContainer, Main } from "./style";
