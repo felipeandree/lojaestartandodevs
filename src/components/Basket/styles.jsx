@@ -13,5 +13,5 @@ color: #ffff;
 export const Buttons = styled.div`
 
 >.col-2{
-color: #bc1010;
+color: #bc1010;                                                                                                                                                                                            
 }`

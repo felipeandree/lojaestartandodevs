@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { CartBox, Buttons } from './styles';
-
+import { CartContext } from "../../contexts/cart";
+  
 export default function Basket(props) {
-  const { cartItems, onAdd, onRemove } = props;
-  console.log(cartItems.length)
+
+  const { cartItems, onAdd, onRemove } = useContext(CartContext);
+  
   const itemsPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0);
   const taxPrice = itemsPrice * 0.14;
   const shippingPrice = itemsPrice > 2000 ? 0 : 20;
