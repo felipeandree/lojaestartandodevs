@@ -4,14 +4,13 @@ export const Body = styled.div `
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vw;
+  padding: 2rem; 
+  margin: 0.5rem; 
   flex-direction: row;
 `
 
 export const TextInformation = styled.div`
   padding: 1rem 1.2rem; 
-  margin: 7.3rem 2.3rem 1.5rem; 
   font-family: Open Sans; 
   font-style: normal
   font-size: 24px;

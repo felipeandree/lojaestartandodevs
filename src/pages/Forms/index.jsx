@@ -7,7 +7,7 @@ export const ShippingForm = () => {
     <>
       <Body>
         <TextInformation>
-          <h1>Por favor, insira suas informações pessoais de contato</h1>
+          <h2>Por favor, insira suas informações pessoais de contato</h2>
         </TextInformation>
       </Body>
       
