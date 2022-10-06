@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useState, useContext } from "react";
 import ProductsList from "components/ProductsList";
 import data from "../../mocks/products/items";
@@ -17,9 +18,6 @@ export const Shop = () => {
         onAdd={onAdd}
         onRemove={onRemove}
       />
-
-      <Basket cartItems={cartItems} onAdd={onAdd} onRemove={onRemove}></Basket>
-    
       </>
   );
 };

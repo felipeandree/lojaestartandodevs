@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, {useContext} from 'react';
 import { Link } from 'react-router-dom';
 import { CartContext } from "../../contexts/cart";
@@ -10,7 +11,7 @@ import {
 
 export default function Product(props) {
   const { product } = props;
-  const { products } = data;
+
   const { cartItems, onAdd, onRemove } = useContext(CartContext);
   // const { productCategory, productName, productId } = useParams()
 

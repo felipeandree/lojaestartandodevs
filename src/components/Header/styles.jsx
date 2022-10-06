@@ -9,6 +9,9 @@ export const HeaderIcons = styled.div`
 display:flex;
 > #menuIcons {
   margin:0 2rem;
+  >.badge {
+    color: green;
+}
 }
 >#menuIcons:nth-child(1){
     margin: 0 0 0 2rem;

@@ -1,8 +1,9 @@
+// @ts-nocheck
 import React, {useContext} from 'react';
-import { CartBox, Buttons } from './styles';
+import { CartBox, Button } from './styles';
 import { CartContext } from "../../contexts/cart";
   
-export default function Basket(props) {
+export default function Basket() {
 
   const { cartItems, onAdd, onRemove } = useContext(CartContext);
   
@@ -19,17 +20,16 @@ export default function Basket(props) {
         {cartItems.map((item) => (
           <div key={item.id} className="row">
             <div className="col-2">{item.name}</div>
-          <Buttons>
-            <div className="col-2">
-              <button onClick={() => onRemove(item)} className="remove">
+          
+            <div className="row-green">
+              <Button onClick={() => onRemove(item)} className="remove">
                 -
-              </button>{' '}
-              <button onClick={() => onAdd(item)} className="add">
+              </Button >{' '}
+              <Button  onClick={() => onAdd(item)} className="add">
                 +
-                </button>
+                </Button >
             
               </div>
-            </Buttons>
 
             <div className="col-2 text-right">
               {item.qty} x R${item.price.toFixed(2)}
@@ -65,9 +65,9 @@ export default function Basket(props) {
             </div>
             <hr />
             <div className="row">
-              <button onClick={() => alert('Implement Checkout!')}>
+              <Button   onClick={() => alert('Implement Checkout!')}>
                 Checkout
-              </button>
+              </Button >
             </div>
           </>
         )}

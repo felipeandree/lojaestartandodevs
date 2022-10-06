@@ -1,14 +1,14 @@
+// @ts-nocheck
  // eslint-disable-next-line no-unused-vars
 import Basket from "components/Basket";
-import { useState, useContext } from 'react';
+import { useContext } from 'react';
 import { MainTitle, CartContainer, Main } from "./style";
 import { CartContext } from "../../contexts/cart";
-
+import data from "../../mocks/products/items";
 
 export const Cart = () => {
-
-  const {cartItems, onAdd, onRemove} = useContext(CartContext);
-
+  const { products } = data;
+    const { cartItems, setCartItems, onAdd, onRemove } = useContext(CartContext);
 
   return (
 
@@ -17,7 +17,7 @@ export const Cart = () => {
       <Main >
         <CartContainer >
 
-        <Basket cartItems={cartItems} onAdd={onAdd} onRemove={onRemove}></Basket>
+        <Basket products={products} cartItems={cartItems} setCartItems={setCartItems}onAdd={onAdd} onRemove={onRemove}></Basket>
           
         </CartContainer>
       </Main>

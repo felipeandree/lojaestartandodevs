@@ -1,6 +1,8 @@
+// @ts-nocheck
 import { createContext, useState } from "react";
 
 export const CartContext = createContext({
+    
     cartItems: [],
     setCartItems: () => { },
     onAdd: () => { },
@@ -37,10 +39,6 @@ export const CartContextProvider = ({ children }) => {
             );
         }
     };
-
-    // const addProductToCart = (product) => {
-    //     setCartItems([...cartItems, product]);
-    // };
 
     return (
         <CartContext.Provider

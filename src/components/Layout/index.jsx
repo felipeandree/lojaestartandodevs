@@ -1,11 +1,12 @@
-import React, {useState} from "react";
+import React, {useContext} from "react";
 import { PageWrapper, PageContent } from "./styles";
+import { CartContext } from "../../contexts/cart";
 import { Header } from "../Header";
 import { Footer } from "../Footer";
+
 const Layout = ({ children }) => {
   
-  // eslint-disable-next-line no-unused-vars
-  const [cartItems, setCartItems] = useState([]);
+  const { cartItems } = useContext(CartContext);
 
   return (
     <PageWrapper>
