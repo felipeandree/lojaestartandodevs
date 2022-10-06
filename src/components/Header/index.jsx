@@ -1,3 +1,4 @@
+// @ts-nocheck
 /* eslint-disable no-unused-vars*/
 import React, { useState } from "react";
 import { Link, useLocation, NavLink } from "react-router-dom";

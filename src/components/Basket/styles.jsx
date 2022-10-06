@@ -8,10 +8,11 @@ justify-content: center;
 align-items: center;
 
 color: #ffff;
+
+
 `;
 
-export const Buttons = styled.div`
-
->.col-2{
-color: #bc1010;                                                                                                                                                                                            
-}`
+export const Button = styled.div`
+ 
+color: var(--primary-color)   
+`;

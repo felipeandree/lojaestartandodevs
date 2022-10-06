@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 import { Swiper, SwiperSlide } from "swiper/react";
 import data from "../../mocks/products/items";
 import {
@@ -19,7 +20,7 @@ export const OffersBox = () => {
   const { products } = data;
   return (
     <CardOffer className="homeSection">
-      <SectionTitle><a href="/produtos">Ofertas</a></SectionTitle>
+      <SectionTitle><Link to="/produtos">Ofertas</Link></SectionTitle>
 
       {products.length > 0 ? (
         <CardOfferSections>
