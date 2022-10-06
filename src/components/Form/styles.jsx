@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const FormContainer = styled.div `
     display: flex;
     flex-direction: column;
-    padding: 0 2.3rem;
-    margin: 0 1rem;  
+    padding: 1rem 2.3rem;
+    margin: 1rem 1rem;  
 `
 
 export const Label = styled.label `
@@ -35,6 +35,9 @@ export const ButtonContainer = styled.div`
     display: flex;
     justify-content: flex-end;
     padding: 4rem 2.10rem; 
- 
-
+    
+    font-family: Open Sans;
+    font-size: 22px;
+    color: #blue;
+    
 `
