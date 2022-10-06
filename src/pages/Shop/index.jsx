@@ -1,9 +1,8 @@
 // @ts-nocheck
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import ProductsList from "components/ProductsList";
 import data from "../../mocks/products/items";
 import { CartContext } from "../../contexts/cart";
-import Basket from "components/Basket";
 
 export const Shop = () => {
   const { products } = data;

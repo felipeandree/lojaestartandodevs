@@ -2,7 +2,6 @@
 import React, {useContext} from 'react';
 import { Link } from 'react-router-dom';
 import { CartContext } from "../../contexts/cart";
-import data from 'mocks/products/items';
 
 import {
   AddProductCart, Card, CardBtn, CardImage, CardLeft, CardRating, CardRight, HeartPlus, StarRating, Text
@@ -12,7 +11,7 @@ import {
 export default function Product(props) {
   const { product } = props;
 
-  const { cartItems, onAdd, onRemove } = useContext(CartContext);
+  const { onAdd } = useContext(CartContext);
   // const { productCategory, productName, productId } = useParams()
 
   return (
