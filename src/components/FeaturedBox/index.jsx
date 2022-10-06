@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import data from "../../mocks/products/items";
 import {
@@ -18,22 +19,19 @@ import "swiper/css/navigation";
 export const FeaturedBox = () => {
   const { products } = data;
   return (
-    <CardOffer className="homeSection">
-      <SectionTitle><a href="/produtos">Novidades</a></SectionTitle>
+    <CardOffer className='homeSection'>
+      <SectionTitle>
+        <Link to='/produtos'>Novidades</Link>
+      </SectionTitle>
 
       {products.length > 0 ? (
         <CardOfferSections>
-          <Swiper
-            slidesPerView={1}
-            spaceBetween={5}
-            className='mySwiper'>
-
+          <Swiper slidesPerView={1} spaceBetween={5} className='mySwiper'>
             {products.map((item) => {
               if (item.type === "featured") {
                 return (
                   <SwiperSlide key={item.id}>
                     <Card>
-
                       <CardBottom>
                         <CardImg>
                           <img src={item.image} alt={item.alt} />
@@ -52,11 +50,9 @@ export const FeaturedBox = () => {
               }
               return null;
             })}
-
           </Swiper>
         </CardOfferSections>
       ) : null}
     </CardOffer>
   );
 };
-
