@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 
-const SlidesComponent = ({ slides }) => {
+export const SlidesComponent = ({ slides }) => {
 
   return (
     <>
@@ -21,4 +21,5 @@ const SlidesComponent = ({ slides }) => {
   );
 };
 
-export { SlidesComponent };
+
+export default SlidesComponent;

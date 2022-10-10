@@ -8,9 +8,10 @@ import Layout from "../components/Layout";
 
 const mainRouter = () => {
   return (
-    <Layout>
+    
       <Routes>
-        <Route path="/" element={<Home />} />
+      <Route element={<Layout />} >
+        < Route path="/" element={<Home />} />
         <Route path="/contato">Contato</Route>
         <Route path="/carrinho" element={<Cart />} />
         <Route path="/produtos" element={<Shop />} />
@@ -18,8 +19,9 @@ const mainRouter = () => {
           element={<ProductsCategory />}
         />
         <Route path="/formulario" element={<ShippingForm />} />
+        </Route>
       </Routes>
-    </Layout>
+    
   );
 };
 
