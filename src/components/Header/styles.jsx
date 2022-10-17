@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
-export const Logo = styled.img`
+export const Logo = styled.div`
 
 width: 100%;
 
 `;
+
 export const HeaderIcons = styled.div`
 display:flex;
 > #menuIcons {

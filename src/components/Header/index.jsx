@@ -13,22 +13,24 @@ import {
 } from "./styles";
 
 export function Header(props) {
-  // const {pathname} = useLocation();
-  // let logoHeader = {pathname} === '/' ? <Logo src='/img/logo.png' href="/"alt='logo' /> : <Link to="/"><ArrowBack /> </Link>
+
+  const {pathname} = useLocation();
+  let logoHeader = pathname === '/' ? <Logo><img src="/img/logo.png" alt="logo" alt="" />
+  <h1 className="home-title">LOJA</h1></Logo> : <Link to="/"><ArrowBack /> </Link>
+
   const [openMenu, setOpenMenu] = useState(false);
   return (
     <div className="header">
       <MenuMobile menuIsVisible={openMenu} setMenuIsVisible={setOpenMenu} />
       <div className="menu-logo">
-        {/* {logoHeader} */}
+       
 
         {/* {props.showBack && <ArrowBack />} */}
         <NavLink to="/">
-          <Logo src="/img/logo.png" alt="logo" />
+           {logoHeader}
+          
         </NavLink>
-        <NavLink to="/">
-          <h1 className="home-title">LOJA</h1>
-        </NavLink>
+      
       </div>
       <input className="logo-input" placeholder="Pesquisar" type="search" />
 

@@ -8,20 +8,19 @@ import Layout from "../components/Layout";
 
 const mainRouter = () => {
   return (
-    
-      <Routes>
-      <Route element={<Layout />} >
-        < Route path="/" element={<Home />} />
-        <Route path="/contato">Contato</Route>
-        <Route path="/carrinho" element={<Cart />} />
-        <Route path="/produtos" element={<Shop />} />
-        <Route path="/produtos/:productCategory"
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path='/' element={<Home />} />
+        <Route path='/contato'>Contato</Route>
+        <Route path='/carrinho' element={<Cart />} />
+        <Route path='/produtos' element={<Shop />} />
+        <Route
+          path='/produtos/:productCategory'
           element={<ProductsCategory />}
         />
-        <Route path="/formulario" element={<ShippingForm />} />
-        </Route>
-      </Routes>
-    
+        <Route path='/formulario' element={<ShippingForm />} />
+      </Route>
+    </Routes>
   );
 };
 
